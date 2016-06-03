@@ -1,2 +1,3 @@
-# Zurich-R-User-Group.github.io
-Zurich R User Group Website
+# Zurich R User Group
+
+Learn about our past and future meetups: [http://www.meetup.com/de-DE/Zurich-R-User-Group/]
