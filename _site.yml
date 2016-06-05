@@ -10,5 +10,5 @@ navbar:
     - text: "Slides"
       href: slides.html
   right:
-    - text: "Meetup"
+    - text: "Meetup page"
       href: http://www.meetup.com/Zurich-R-User-Group/
