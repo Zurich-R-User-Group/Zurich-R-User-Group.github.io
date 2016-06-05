@@ -4,4 +4,3 @@ title: "Zurich R User Group"
 
 Welcome to the website of the Zurich R User Group.
 We will try to gather information about our [meetups](http://www.meetup.com/Zurich-R-User-Group/) here.
-

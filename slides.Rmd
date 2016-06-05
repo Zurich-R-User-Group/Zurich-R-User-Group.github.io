@@ -2,7 +2,7 @@
 title: "Slides"
 ---
 
-Here you can find slides from past meetups. We also have a [slideshare account](http://de.slideshare.net/Zurich_R_User_Group).
+Here you can find slides from past meetups. 
 
 
 ### May 23, 2016
