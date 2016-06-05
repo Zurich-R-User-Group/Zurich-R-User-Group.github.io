@@ -5,7 +5,7 @@ title: "Who we are"
 We are R Users from in and around Zurich. We hold Meetups, which you can see 
 [here](http://www.meetup.com/Zurich-R-User-Group/).
 
-Right now Heidi Seibold, Muriel Buri and Christoph Molnar are the Organisers.
+Right now Heidi Seibold, Muriel Buri and Christoph Molnar are the organisers.
 
 The source code for the website can be found [here](). 
 It is based on [RMarkdown website examples](https://github.com/rstudio/rmarkdown-website-examples)
