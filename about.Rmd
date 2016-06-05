@@ -7,6 +7,8 @@ We are R Users from in and around Zurich. We hold Meetups, which you can see
 
 Right now Heidi Seibold, Muriel Buri and Christoph Molnar are the organisers.
 
-The source code for the website can be found [here](). 
+The source code for the website can be found [here](https://github.com/Zurich-R-User-Group/Zurich-R-User-Group.github.io). 
+If you want parts of the website changed, just make a pull request or file an
+[issue](https://github.com/Zurich-R-User-Group/Zurich-R-User-Group.github.io/issues).
 It is based on [RMarkdown website examples](https://github.com/rstudio/rmarkdown-website-examples)
 and was quite easy to publish thanks to [github pages](https://pages.github.com/).
