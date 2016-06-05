@@ -2,8 +2,7 @@
 title: "Slides"
 ---
 
-Here you can find slides from past meetups. 
-
+Here you can find slides from past meetups.
 
 ### May 23, 2016
 - [Microsoft R Server](http://chilp.it/e690a33) (Marc Schöni, Microsoft)
