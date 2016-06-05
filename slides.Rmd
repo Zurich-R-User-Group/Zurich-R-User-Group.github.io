@@ -4,7 +4,20 @@ title: "Slides"
 
 Here you can find slides from past meetups. We also have a [slideshare account](http://de.slideshare.net/Zurich_R_User_Group).
 
-## Dec 7, 2015
+
+### May 23, 2016
+- [Microsoft R Server](http://chilp.it/e690a33) (Marc Schöni, Microsoft)
+- [Automated reports at OrganizationView](http://www.slideshare.net/AndrewMarritt/zurich-r-user-group-presentation-may-2016) (Andrew Marritt, OrganizationView)
+
+### March 16, 2016
+- [Data journalism](http://grssnbchr.github.io/zrug-rddj) (Timo Grossenbacher, SRF)
+- [Open Data Zurich](http://de.slideshare.net/Opendatazurich/open-data-lt3-r) (Marco Sieber and Fidel Thomet, Open Data Zurich)
+
+### January 21, 2016
+- [Speeding up (big) data manipulation with the data.table package](http://de.slideshare.net/Zurich_R_User_Group/speeding-up-big-data-manipulation-with-datatable-package) (Vasily Tolkachev, Zurich University of Applied Sciences, Institute for Data Analysis and Process Design)
+- [DescTools - Tools for Descriptive Statistics and Exploratory Data Analysis](http://de.slideshare.net/Zurich_R_User_Group/zurich-r-user-group-desc-tools) (Andri Signorell, Helsana/HWZ)  
+
+### December 7, 2015
 - [Shiny: Make Your R Code Interactive](http://de.slideshare.net/Zurich_R_User_Group/december-2015-meetup-shiny-make-your-r-code-interactive-craig-wang) (Craig Wang, ETH)
 - Exploring knitr (Isaac Gravestock, UZH)
 - [Improving computational performance with algorithm engineering](https://github.com/krlmlr-useR15/krlmlr-useR15.github.io/tree/master/_presentation) (Kirill Müller, ETH)
