@@ -1,0 +1,10 @@
+---
+title: "Slides"
+---
+
+Here you can find slides from past meetups. We also have a [slideshare account](http://de.slideshare.net/Zurich_R_User_Group).
+
+## Dec 7, 2015
+- [Shiny: Make Your R Code Interactive](http://de.slideshare.net/Zurich_R_User_Group/december-2015-meetup-shiny-make-your-r-code-interactive-craig-wang) (Craig Wang, ETH)
+- Exploring knitr (Isaac Gravestock, UZH)
+- [Improving computational performance with algorithm engineering](https://github.com/krlmlr-useR15/krlmlr-useR15.github.io/tree/master/_presentation) (Kirill Müller, ETH)
