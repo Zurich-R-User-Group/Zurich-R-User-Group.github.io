@@ -1,9 +1,13 @@
-name: "my-website"
+name: "Zurich-R-User-Group"
 output_dir: "."
 navbar:
-  title: "My Website"
+  title: "Zurich R User Group"
   left:
     - text: "Home"
       href: index.html
     - text: "About"
       href: about.html
+    - text: "Slides"
+      href: slides.html
+    - text: "Meetup"
+      href: http://www.meetup.com/Zurich-R-User-Group/
