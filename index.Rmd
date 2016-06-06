@@ -7,4 +7,4 @@ We will try to gather information about our [meetups](http://www.meetup.com/Zuri
 
 
 
-![](https://github.com/Zurich-R-User-Group/Zurich-R-User-Group.github.io/blob/master/_files/plot_logo.pdf)
+![](https://github.com/Zurich-R-User-Group/Zurich-R-User-Group.github.io/blob/master/_files/plot_logo.png)
