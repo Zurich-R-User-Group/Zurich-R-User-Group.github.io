@@ -5,15 +5,16 @@ title: "Zurich R User Group"
 Welcome to the website of the Zurich R User Group.
 We will try to gather information about our [meetups](http://www.meetup.com/Zurich-R-User-Group/) here.
 
-```{r, echo=FALSE, fig.width=7, fig.height=7}
-library("ggplot2")
-letter <- "R"
-df <- data.frame(x = 1, y = 1, label = "R")
+<!-- ```{r, echo=FALSE, fig.width=7, fig.height=7} -->
+<!-- library("ggplot2") -->
+<!-- letter <- "R" -->
+<!-- df <- data.frame(x = 1, y = 1, label = "R") -->
 
-ggplot(df, aes(x = x, y = y, label = label)) + 
-  geom_text(size = 100, color = "white") + 
-  theme(panel.background = element_rect(fill = '#E11A27'),
-        panel.grid.minor = element_line(colour = '#E11A27'),
-        panel.grid.major = element_line(colour = '#E11A27'))
-```
+<!-- ggplot(df, aes(x = x, y = y, label = label)) +  -->
+<!--   geom_text(size = 100, color = "white") +  -->
+<!--   theme(panel.background = element_rect(fill = '#E11A27'), -->
+<!--         panel.grid.minor = element_line(colour = '#E11A27'), -->
+<!--         panel.grid.major = element_line(colour = '#E11A27')) -->
+<!-- ``` -->
 
+![](https://github.com/Zurich-R-User-Group/Zurich-R-User-Group.github.io/blob/master/index_files/figure-html/unnamed-chunk-1-1.png)
