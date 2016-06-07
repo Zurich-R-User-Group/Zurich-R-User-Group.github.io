@@ -8,3 +8,5 @@ We will try to gather information about our [meetups](http://www.meetup.com/Zuri
 
 
 ![ggplot of swiss R flag](https://raw.githubusercontent.com/Zurich-R-User-Group/Zurich-R-User-Group.github.io/master/_files/plot_logo.png)
+
+<img src="https://raw.githubusercontent.com/Zurich-R-User-Group/Zurich-R-User-Group.github.io/master/_files/plot_logo.png" width="48">
