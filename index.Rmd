@@ -8,6 +8,7 @@ Welcome to the website of the Zurich R User Group.
 We will try to gather information about our [meetups](http://www.meetup.com/Zurich-R-User-Group/) here.
 
 ### News
+#### Next meetup on Wednesday, August 3, 2016
 The next meetup will be a [visualisation spezial](http://www.meetup.com/Zurich-R-User-Group/events/231840730/).
 
 - You are interested in seeing and learning about some neat visualisations in R? 
