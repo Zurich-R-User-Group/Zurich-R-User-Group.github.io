@@ -22,3 +22,16 @@ The next meetup will be a [visualisation spezial](http://www.meetup.com/Zurich-R
 - You know a great location in Zurich where we could hold the meetup? 
 [Contact us](http://www.meetup.com/Zurich-R-User-Group/members/?op=leaders)!
 
+
+----
+
+### Contact us
+You have any comments or questions, want to speak at an event or have
+anything else to say to us? Let us know! 
+<form action="https://formspree.io/heidi.bold@gmail.com"
+      method="POST">
+    <input type="text" name="name">
+    <input type="email" name="_replyto">
+    <input type="text" name="message">
+    <input type="submit" value="Send">
+</form> 
