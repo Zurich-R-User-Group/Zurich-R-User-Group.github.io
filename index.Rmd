@@ -15,12 +15,9 @@ We will try to gather information about our [meetups](http://www.meetup.com/Zuri
 #### Next meetup on Wednesday, August 3, 2016
 The next meetup will be a [visualisation spezial](http://www.meetup.com/Zurich-R-User-Group/events/231840730/).
 
-- You are interested in seeing and learning about some neat visualisations in R? 
+You are interested in seeing and learning about some neat visualisations in R? 
 [RSVP on the meetup site](http://www.meetup.com/Zurich-R-User-Group/events/231840730/) and come by!
-- You have any interesting visualisations you would like to show in a 5-8 minute presentation? 
-[Contact us](http://www.meetup.com/Zurich-R-User-Group/members/?op=leaders)!
-- You know a great location in Zurich where we could hold the meetup? 
-[Contact us](http://www.meetup.com/Zurich-R-User-Group/members/?op=leaders)!
+
 
 
 ----
