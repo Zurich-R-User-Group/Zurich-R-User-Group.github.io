@@ -5,9 +5,9 @@ title: "Slides"
 Here you can find slides from past meetups.
 
 ### August 4, 2016
-- [Federal election 2015 : visualizing the panachage-statistics](http://www.web.statistik.zh.ch/cms_vis/meetup/panachage.html)(Thomas Lo Russo, Statistical Office Zurich)
-- [Animation of political shifts in elections](https://github.com/srfdata/2015-09-elections-political-shifts/blob/master/analysis/main.Rmd)(Timo Grossenbacher)
-- [Crosstalk](https://raw.githubusercontent.com/dimitris1ps/zurichRMeetup/master/meetup.rmd)(Dimitris Psaradellis, eBay)
+- [Federal election 2015 : visualizing the panachage-statistics](http://www.web.statistik.zh.ch/cms_vis/meetup/panachage.html) (Thomas Lo Russo, Statistical Office Zurich)
+- [Animation of political shifts in elections](https://github.com/srfdata/2015-09-elections-political-shifts/blob/master/analysis/main.Rmd) (Timo Grossenbacher)
+- [Crosstalk](https://raw.githubusercontent.com/dimitris1ps/zurichRMeetup/master/meetup.rmd) (Dimitris Psaradellis, eBay)
 
 ### May 23, 2016
 - [Microsoft R Server](http://chilp.it/e690a33) (Marc Schöni, Microsoft)
