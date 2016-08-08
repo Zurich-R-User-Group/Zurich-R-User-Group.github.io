@@ -1,0 +1,155 @@
+---
+output: pdf_document
+---
+---
+title       : "Interactive Javascript in R with rCharts"
+subtitle    : "Zurich R User Meetup"
+author      : "Matteo Casserini"
+job         : "3 August 2016"
+logo        : rCharts.png
+framework   : io2012        # {io2012, html5slides, shower, dzslides, ...}
+highlighter : highlight.js  # {highlight.js, prettify, highlight}
+hitheme     : solarized_light
+widgets     : [mathjax]            # {mathjax, quiz, bootstrap}
+mode        : selfcontained # {standalone, draft}
+knit        : slidify::knit2slides
+ext_widgets : {rCharts: [libraries\\nvd3, libraries\\highcharts]}
+--- .segue .dark .nobackground
+
+```{r setup, message = F, echo = F}
+require(rCharts)
+require(reshape2)
+```
+
+## The rCharts package
+
+--- .quote .nobackground
+
+## ![img](assets/img/rCharts.png) From the package's website
+
+<q>rCharts is an R package to create, customize and share interactive visualizations, using a lattice-like formula interface.</q>
+
+--- .nobackground
+
+## In a nutshell
+
+Essentially, `rCharts` allows to integrate *multiple* Javascript libraries into a *single* package with a common interface 
+$\Rightarrow$ pluggable in Shiny or HTML5 presentations
+
+Some of the libraries implemented so far:
+* Morris.JS
+* Highcharts
+* NVD3
+* Vega
+* xCharts
+* $\cdots$
+
+--- .nobackground
+
+## Installation
+
+```{r install, eval = F, tidy = F, results = 'hide'}
+require(devtools)
+install_github('ramnathv/rCharts')
+```
+
+<br>
+
+## Loading package
+```{r loading, eval = F, tidy = F, results = 'hide'}
+require(rCharts)
+```
+
+--- .nobackground
+
+## Use
+
+`rCharts` essentially introduces two classes of functions:
+* Plotting functions for specifying plots via a formula interface (like the `lattice` package)
+  * `hPlot` (Highcharts)
+  * `nPlot` (NVD3)
+  * `mPlot` (Morris.JS)
+  * $\cdots$
+* Utility functions for embedding the plots in a Shiny application
+  * `renderChart` (in `server.R`)
+  * `showOutput` (in `ui.R`)
+
+--- .segue .dark .nobackground
+
+## Some examples
+
+--- .nobackground
+
+## Highcharts
+
+```{r highchartcode, eval = F, tidy = F, results = 'hide'}
+require(rCharts)
+dataset <- na.omit(MASS::survey)
+h <- hPlot(Pulse ~ Height,
+           data = dataset,
+           type = "scatter",
+           group = "Exer")
+```
+
+--- .nobackground
+
+## Highcharts
+
+```{r highchart, results = 'asis', comment = NA, echo = F}
+dataset <- na.omit(MASS::survey)
+h <- hPlot(Pulse ~ Height,
+           data = dataset,
+           type = "scatter",
+           group = "Exer")
+h$show('inline', include_assets = TRUE, cdn = TRUE)
+```
+
+--- .nobackground
+
+## NVD3
+
+```{r nvdchartcode, results = 'hide', tidy = F, message = F}
+require(rCharts)
+dataset <- subset(as.data.frame(HairEyeColor), Sex == 'Male')
+n <- nPlot(Freq ~ Hair, 
+           group = 'Eye',
+           data = dataset,
+           type = 'multiBarChart'
+)
+```
+
+--- .nobackground
+
+## NVD3
+
+```{r nvdchart, results = 'asis', comment = NA, echo = F}
+dataset <- subset(as.data.frame(HairEyeColor), Sex == 'Male')
+n <- nPlot(Freq ~ Hair, 
+           group = 'Eye',
+           data = dataset,
+           type = 'multiBarChart'
+)
+n$show('inline', include_assets = TRUE, cdn = TRUE)
+```
+
+--- .segue .dark .nobackground
+
+## Pros and Cons
+
+--- .nobackground
+
+## Pros and Cons
+
+Pros
+* Highly flexible
+* Large number of libraries supported
+* Nice JS-based visualisations and animations
+
+Cons
+* Package not actively maintained
+* Documentation partially missing/outdated
+* Defining custom JS layout might be needed for tweaking output
+
+--- .segue .dark .nobackground
+
+## Thank you!

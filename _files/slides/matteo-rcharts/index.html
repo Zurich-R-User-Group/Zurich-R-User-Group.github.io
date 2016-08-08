@@ -1,0 +1,1316 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Interactive Javascript in R with rCharts</title>
+  <meta charset="utf-8">
+  <meta name="description" content="Interactive Javascript in R with rCharts">
+  <meta name="author" content="Matteo Casserini">
+  <meta name="generator" content="slidify" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/default.css" media="all" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/phone.css" 
+    media="only screen and (max-device-width: 480px)" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/slidify.css" >
+  <link rel="stylesheet" href="libraries/highlighters/highlight.js/css/solarized_light.css" />
+  <base target="_blank"> <!-- This amazingness opens all links in a new tab. -->  <link rel=stylesheet href="libraries/widgets/nvd3/css/nv.d3.css"></link>
+<link rel=stylesheet href="libraries/widgets/nvd3/css/rNVD3.css"></link>
+<link rel=stylesheet href="./assets/css/ribbons.css"></link>
+
+  
+  <!-- Grab CDN jQuery, fall back to local if offline -->
+  <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.min.js"></script>
+  <script>window.jQuery || document.write('<script src="libraries/widgets/quiz/js/jquery.js"><\/script>')</script> 
+  <script data-main="libraries/frameworks/io2012/js/slides" 
+    src="libraries/frameworks/io2012/js/require-1.0.8.min.js">
+  </script>
+  
+  <script src="libraries/widgets/highcharts/js/jquery-1.9.1.min.js"></script>
+<script src="libraries/widgets/highcharts/js/highcharts.js"></script>
+<script src="libraries/widgets/highcharts/js/highcharts-more.js"></script>
+<script src="libraries/widgets/highcharts/js/exporting.js"></script>
+<script src="libraries/widgets/nvd3/js/jquery-1.8.2.min.js"></script>
+<script src="libraries/widgets/nvd3/js/d3.v3.min.js"></script>
+<script src="libraries/widgets/nvd3/js/nv.d3.min-new.js"></script>
+<script src="libraries/widgets/nvd3/js/fisheye.js"></script>
+
+
+</head>
+<body style="opacity: 0">
+  <slides class="layout-widescreen">
+    
+    <!-- LOGO SLIDE -->
+        <slide class="title-slide segue nobackground">
+  <aside class="gdbar">
+    <img src="assets/img/rCharts.png">
+  </aside>
+  <hgroup class="auto-fadein">
+    <h1>Interactive Javascript in R with rCharts</h1>
+    <h2>Zurich R User Meetup</h2>
+    <p>Matteo Casserini<br/>3 August 2016</p>
+  </hgroup>
+  <article></article>  
+</slide>
+    
+
+    <!-- SLIDES -->
+    <slide class="segue dark nobackground" id="slide-1" style="background:;">
+  <hgroup>
+    <h2>The rCharts package</h2>
+  </hgroup>
+  <article data-timings="">
+    
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="quote nobackground" id="slide-2" style="background:;">
+  <hgroup>
+    <h2><img src="assets/img/rCharts.png" alt="img"> From the package&#39;s website</h2>
+  </hgroup>
+  <article data-timings="">
+    <p><q>rCharts is an R package to create, customize and share interactive visualizations, using a lattice-like formula interface.</q></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="nobackground" id="slide-3" style="background:;">
+  <hgroup>
+    <h2>In a nutshell</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>Essentially, <code>rCharts</code> allows to integrate <em>multiple</em> Javascript libraries into a <em>single</em> package with a common interface 
+\(\Rightarrow\) pluggable in Shiny or HTML5 presentations</p>
+
+<p>Some of the libraries implemented so far:</p>
+
+<ul>
+<li>Morris.JS</li>
+<li>Highcharts</li>
+<li>NVD3</li>
+<li>Vega</li>
+<li>xCharts</li>
+<li>\(\cdots\)</li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="nobackground" id="slide-4" style="background:;">
+  <hgroup>
+    <h2>Installation</h2>
+  </hgroup>
+  <article data-timings="">
+    <pre><code class="r">require(devtools)
+install_github(&#39;ramnathv/rCharts&#39;)
+</code></pre>
+
+<p><br></p>
+
+<h2>Loading package</h2>
+
+<pre><code class="r">require(rCharts)
+</code></pre>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="nobackground" id="slide-5" style="background:;">
+  <hgroup>
+    <h2>Use</h2>
+  </hgroup>
+  <article data-timings="">
+    <p><code>rCharts</code> essentially introduces two classes of functions:</p>
+
+<ul>
+<li>Plotting functions for specifying plots via a formula interface (like the <code>lattice</code> package)
+
+<ul>
+<li><code>hPlot</code> (Highcharts)</li>
+<li><code>nPlot</code> (NVD3)</li>
+<li><code>mPlot</code> (Morris.JS)</li>
+<li>\(\cdots\)</li>
+</ul></li>
+<li>Utility functions for embedding the plots in a Shiny application
+
+<ul>
+<li><code>renderChart</code> (in <code>server.R</code>)</li>
+<li><code>showOutput</code> (in <code>ui.R</code>)</li>
+</ul></li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="segue dark nobackground" id="slide-6" style="background:;">
+  <hgroup>
+    <h2>Some examples</h2>
+  </hgroup>
+  <article data-timings="">
+    
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="nobackground" id="slide-7" style="background:;">
+  <hgroup>
+    <h2>Highcharts</h2>
+  </hgroup>
+  <article data-timings="">
+    <pre><code class="r">require(rCharts)
+dataset &lt;- na.omit(MASS::survey)
+h &lt;- hPlot(Pulse ~ Height,
+           data = dataset,
+           type = &quot;scatter&quot;,
+           group = &quot;Exer&quot;)
+</code></pre>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="nobackground" id="slide-8" style="background:;">
+  <hgroup>
+    <h2>Highcharts</h2>
+  </hgroup>
+  <article data-timings="">
+    <script type='text/javascript' src=//code.jquery.com/jquery-1.9.1.min.js></script>
+
+<script type='text/javascript' src=//code.highcharts.com/highcharts.js></script>
+
+<script type='text/javascript' src=//code.highcharts.com/highcharts-more.js></script>
+
+<script type='text/javascript' src=//code.highcharts.com/modules/exporting.js></script> 
+
+<p><style>
+  .rChart {
+    display: block;
+    margin-left: auto; 
+    margin-right: auto;
+    width: 800px;
+    height: 400px;
+  }<br>
+  </style></p>
+
+<div id = 'chart16ec1e132895' class = 'rChart highcharts'></div>
+
+<script type='text/javascript'>
+    (function($){
+        $(function () {
+            var chart = new Highcharts.Chart({
+ "dom": "chart16ec1e132895",
+"width":            800,
+"height":            400,
+"credits": {
+ "href": null,
+"text": null 
+},
+"exporting": {
+ "enabled": false 
+},
+"title": {
+ "text": null 
+},
+"yAxis": [
+ {
+ "title": {
+ "text": "Pulse" 
+} 
+} 
+],
+"series": [
+ {
+ "data": [
+ [
+         154.94,
+71 
+],
+[
+          156.2,
+80 
+],
+[
+            157,
+74 
+],
+[
+            157,
+74 
+],
+[
+            157,
+89 
+],
+[
+         157.48,
+68 
+],
+[
+         160.02,
+80 
+],
+[
+         162.56,
+60 
+],
+[
+            164,
+64 
+],
+[
+            164,
+64 
+],
+[
+            164,
+84 
+],
+[
+            165,
+48 
+],
+[
+            165,
+80 
+],
+[
+            165,
+92 
+],
+[
+          165.1,
+87 
+],
+[
+          166.4,
+72 
+],
+[
+          166.5,
+60 
+],
+[
+            167,
+70 
+],
+[
+         167.64,
+40 
+],
+[
+         167.64,
+70 
+],
+[
+         167.64,
+72 
+],
+[
+         167.64,
+90 
+],
+[
+            168,
+83 
+],
+[
+          168.5,
+85 
+],
+[
+          169.2,
+60 
+],
+[
+            170,
+64 
+],
+[
+            170,
+68 
+],
+[
+            170,
+70 
+],
+[
+            170,
+75 
+],
+[
+            170,
+104 
+],
+[
+         170.18,
+75 
+],
+[
+         170.18,
+80 
+],
+[
+            172,
+68 
+],
+[
+            172,
+68 
+],
+[
+            172,
+92 
+],
+[
+         172.72,
+65 
+],
+[
+         172.72,
+68 
+],
+[
+         172.72,
+69 
+],
+[
+         172.72,
+76 
+],
+[
+            173,
+62 
+],
+[
+            173,
+76 
+],
+[
+            174,
+48 
+],
+[
+            175,
+72 
+],
+[
+            175,
+76 
+],
+[
+         175.26,
+62 
+],
+[
+         175.26,
+66 
+],
+[
+         175.26,
+68 
+],
+[
+          176.5,
+76 
+],
+[
+            177,
+76 
+],
+[
+            177,
+78 
+],
+[
+          177.8,
+62 
+],
+[
+            178,
+70 
+],
+[
+          178.5,
+66 
+],
+[
+            179,
+56 
+],
+[
+            179,
+60 
+],
+[
+            179,
+65 
+],
+[
+            180,
+59 
+],
+[
+            180,
+64 
+],
+[
+            180,
+78 
+],
+[
+            180,
+84 
+],
+[
+         180.34,
+64 
+],
+[
+         180.34,
+72 
+],
+[
+         180.34,
+72 
+],
+[
+            182,
+65 
+],
+[
+          182.5,
+72 
+],
+[
+         182.88,
+72 
+],
+[
+         182.88,
+83 
+],
+[
+            184,
+100 
+],
+[
+            185,
+60 
+],
+[
+            185,
+68 
+],
+[
+            185,
+71 
+],
+[
+            185,
+88 
+],
+[
+         185.42,
+60 
+],
+[
+            187,
+66 
+],
+[
+            187,
+84 
+],
+[
+         187.96,
+64 
+],
+[
+         187.96,
+86 
+],
+[
+            188,
+75 
+],
+[
+            190,
+66 
+],
+[
+            190,
+68 
+],
+[
+            190,
+68 
+],
+[
+          190.5,
+72 
+],
+[
+            195,
+76 
+],
+[
+            196,
+63 
+],
+[
+            200,
+55 
+] 
+],
+"name": "Freq",
+"type": "scatter",
+"marker": {
+ "radius":              3 
+} 
+},
+{
+ "data": [
+ [
+         157.48,
+70 
+],
+[
+            158,
+70 
+],
+[
+            160,
+86 
+],
+[
+            165,
+50 
+],
+[
+            165,
+65 
+],
+[
+            165,
+97 
+],
+[
+            167,
+68 
+],
+[
+            167,
+80 
+],
+[
+            170,
+60 
+],
+[
+            170,
+96 
+],
+[
+            176,
+68 
+],
+[
+          177.8,
+104 
+],
+[
+         180.34,
+68 
+],
+[
+          190.5,
+80 
+] 
+],
+"name": "None",
+"type": "scatter",
+"marker": {
+ "radius":              3 
+} 
+},
+{
+ "data": [
+ [
+            152,
+90 
+],
+[
+          152.4,
+92 
+],
+[
+          153.5,
+76 
+],
+[
+         154.94,
+72 
+],
+[
+            155,
+66 
+],
+[
+            159,
+70 
+],
+[
+            160,
+74 
+],
+[
+            160,
+84 
+],
+[
+            160,
+88 
+],
+[
+         160.02,
+65 
+],
+[
+         160.02,
+72 
+],
+[
+          162.5,
+79 
+],
+[
+         162.56,
+70 
+],
+[
+         162.56,
+70 
+],
+[
+         162.56,
+88 
+],
+[
+            163,
+79 
+],
+[
+            163,
+80 
+],
+[
+            163,
+83 
+],
+[
+            164,
+80 
+],
+[
+            165,
+35 
+],
+[
+            165,
+65 
+],
+[
+            165,
+70 
+],
+[
+            165,
+76 
+],
+[
+            165,
+76 
+],
+[
+            165,
+88 
+],
+[
+          165.1,
+68 
+],
+[
+          165.1,
+85 
+],
+[
+            167,
+61 
+],
+[
+            167,
+76 
+],
+[
+            167,
+79 
+],
+[
+            167,
+90 
+],
+[
+         167.64,
+74 
+],
+[
+            168,
+60 
+],
+[
+            168,
+72 
+],
+[
+            168,
+81 
+],
+[
+          168.9,
+68 
+],
+[
+            169,
+80 
+],
+[
+            170,
+70 
+],
+[
+            170,
+80 
+],
+[
+            170,
+80 
+],
+[
+         170.18,
+78 
+],
+[
+         170.18,
+80 
+],
+[
+            171,
+68 
+],
+[
+            171,
+100 
+],
+[
+         172.72,
+64 
+],
+[
+         172.72,
+90 
+],
+[
+            173,
+92 
+],
+[
+            175,
+72 
+],
+[
+            175,
+84 
+],
+[
+            175,
+90 
+],
+[
+         175.26,
+85 
+],
+[
+          176.5,
+80 
+],
+[
+            178,
+60 
+],
+[
+          179.1,
+80 
+],
+[
+          179.1,
+92 
+],
+[
+            180,
+60 
+],
+[
+            180,
+70 
+],
+[
+            180,
+96 
+],
+[
+         180.34,
+67 
+],
+[
+         182.88,
+74 
+],
+[
+         182.88,
+80 
+],
+[
+            183,
+75 
+],
+[
+            183,
+90 
+],
+[
+            184,
+62 
+],
+[
+            185,
+75 
+],
+[
+            185,
+80 
+],
+[
+            189,
+90 
+],
+[
+          191.8,
+72 
+],
+[
+         193.04,
+83 
+] 
+],
+"name": "Some",
+"type": "scatter",
+"marker": {
+ "radius":              3 
+} 
+} 
+],
+"xAxis": [
+ {
+ "title": {
+ "text": "Height" 
+} 
+} 
+],
+"subtitle": {
+ "text": null 
+},
+"id": "chart16ec1e132895",
+"chart": {
+ "renderTo": "chart16ec1e132895" 
+} 
+});
+        });
+    })(jQuery);
+</script>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="nobackground" id="slide-9" style="background:;">
+  <hgroup>
+    <h2>NVD3</h2>
+  </hgroup>
+  <article data-timings="">
+    <pre><code class="r">require(rCharts)
+dataset &lt;- subset(as.data.frame(HairEyeColor), Sex == &#39;Male&#39;)
+n &lt;- nPlot(Freq ~ Hair, 
+           group = &#39;Eye&#39;,
+           data = dataset,
+           type = &#39;multiBarChart&#39;
+)
+</code></pre>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="nobackground" id="slide-10" style="background:;">
+  <hgroup>
+    <h2>NVD3</h2>
+  </hgroup>
+  <article data-timings="">
+    <p><link rel='stylesheet' href=//cdnjs.cloudflare.com/ajax/libs/nvd3/1.1.15-beta/nv.d3.min.css></p>
+
+<script type='text/javascript' src=//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js></script>
+
+<script type='text/javascript' src=//d3js.org/d3.v3.min.js></script>
+
+<script type='text/javascript' src=//cdnjs.cloudflare.com/ajax/libs/nvd3/1.1.15-beta/nv.d3.min.js></script>
+
+<script type='text/javascript' src=//nvd3.org/assets/lib/fisheye.js></script> 
+
+<p><style>
+  .rChart {
+    display: block;
+    margin-left: auto; 
+    margin-right: auto;
+    width: 800px;
+    height: 400px;
+  }<br>
+  </style></p>
+
+<div id = 'chart16ec26c13177' class = 'rChart nvd3'></div>
+
+<script type='text/javascript'>
+ $(document).ready(function(){
+      drawchart16ec26c13177()
+    });
+    function drawchart16ec26c13177(){  
+      var opts = {
+ "dom": "chart16ec26c13177",
+"width":    800,
+"height":    400,
+"x": "Hair",
+"y": "Freq",
+"group": "Eye",
+"type": "multiBarChart",
+"id": "chart16ec26c13177" 
+},
+        data = [
+ {
+ "Hair": "Black",
+"Eye": "Brown",
+"Sex": "Male",
+"Freq":             32 
+},
+{
+ "Hair": "Brown",
+"Eye": "Brown",
+"Sex": "Male",
+"Freq":             53 
+},
+{
+ "Hair": "Red",
+"Eye": "Brown",
+"Sex": "Male",
+"Freq":             10 
+},
+{
+ "Hair": "Blond",
+"Eye": "Brown",
+"Sex": "Male",
+"Freq":              3 
+},
+{
+ "Hair": "Black",
+"Eye": "Blue",
+"Sex": "Male",
+"Freq":             11 
+},
+{
+ "Hair": "Brown",
+"Eye": "Blue",
+"Sex": "Male",
+"Freq":             50 
+},
+{
+ "Hair": "Red",
+"Eye": "Blue",
+"Sex": "Male",
+"Freq":             10 
+},
+{
+ "Hair": "Blond",
+"Eye": "Blue",
+"Sex": "Male",
+"Freq":             30 
+},
+{
+ "Hair": "Black",
+"Eye": "Hazel",
+"Sex": "Male",
+"Freq":             10 
+},
+{
+ "Hair": "Brown",
+"Eye": "Hazel",
+"Sex": "Male",
+"Freq":             25 
+},
+{
+ "Hair": "Red",
+"Eye": "Hazel",
+"Sex": "Male",
+"Freq":              7 
+},
+{
+ "Hair": "Blond",
+"Eye": "Hazel",
+"Sex": "Male",
+"Freq":              5 
+},
+{
+ "Hair": "Black",
+"Eye": "Green",
+"Sex": "Male",
+"Freq":              3 
+},
+{
+ "Hair": "Brown",
+"Eye": "Green",
+"Sex": "Male",
+"Freq":             15 
+},
+{
+ "Hair": "Red",
+"Eye": "Green",
+"Sex": "Male",
+"Freq":              7 
+},
+{
+ "Hair": "Blond",
+"Eye": "Green",
+"Sex": "Male",
+"Freq":              8 
+} 
+]
+  
+      if(!(opts.type==="pieChart" || opts.type==="sparklinePlus" || opts.type==="bulletChart")) {
+        var data = d3.nest()
+          .key(function(d){
+            //return opts.group === undefined ? 'main' : d[opts.group]
+            //instead of main would think a better default is opts.x
+            return opts.group === undefined ? opts.y : d[opts.group];
+          })
+          .entries(data);
+      }
+      
+      if (opts.disabled != undefined){
+        data.map(function(d, i){
+          d.disabled = opts.disabled[i]
+        })
+      }
+      
+      nv.addGraph(function() {
+        var chart = nv.models[opts.type]()
+          .width(opts.width)
+          .height(opts.height)
+          
+        if (opts.type != "bulletChart"){
+          chart
+            .x(function(d) { return d[opts.x] })
+            .y(function(d) { return d[opts.y] })
+        }
+          
+         
+        
+          
+        
+
+        
+        
+        
+      
+       d3.select("#" + opts.id)
+        .append('svg')
+        .datum(data)
+        .transition().duration(500)
+        .call(chart);
+
+       nv.utils.windowResize(chart.update);
+       return chart;
+      });
+    };
+</script>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="segue dark nobackground" id="slide-11" style="background:;">
+  <hgroup>
+    <h2>Pros and Cons</h2>
+  </hgroup>
+  <article data-timings="">
+    
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="nobackground" id="slide-12" style="background:;">
+  <hgroup>
+    <h2>Pros and Cons</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>Pros</p>
+
+<ul>
+<li>Highly flexible</li>
+<li>Large number of libraries supported</li>
+<li>Nice JS-based visualisations and animations</li>
+</ul>
+
+<p>Cons</p>
+
+<ul>
+<li>Package not actively maintained</li>
+<li>Documentation partially missing/outdated</li>
+<li>Defining custom JS layout might be needed for tweaking output</li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="segue dark nobackground" id="slide-13" style="background:;">
+  <hgroup>
+    <h2>Thank you!</h2>
+  </hgroup>
+  <article data-timings="">
+    
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+    <slide class="backdrop"></slide>
+  </slides>
+  <div class="pagination pagination-small" id='io2012-ptoc' style="display:none;">
+    <ul>
+      <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=1 title='The rCharts package'>
+         1
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=2 title='<img src="assets/img/rCharts.png" alt="img"> From the package&#39;s website'>
+         2
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=3 title='In a nutshell'>
+         3
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=4 title='Installation'>
+         4
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=5 title='Use'>
+         5
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=6 title='Some examples'>
+         6
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=7 title='Highcharts'>
+         7
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=8 title='Highcharts'>
+         8
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=9 title='NVD3'>
+         9
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=10 title='NVD3'>
+         10
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=11 title='Pros and Cons'>
+         11
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=12 title='Pros and Cons'>
+         12
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=13 title='Thank you!'>
+         13
+      </a>
+    </li>
+  </ul>
+  </div>  <!--[if IE]>
+    <script 
+      src="http://ajax.googleapis.com/ajax/libs/chrome-frame/1/CFInstall.min.js">  
+    </script>
+    <script>CFInstall.check({mode: 'overlay'});</script>
+  <![endif]-->
+</body>
+  <!-- Load Javascripts for Widgets -->
+  
+  <!-- MathJax: Fall back to local if CDN offline but local image fonts are not supported (saves >100MB) -->
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        inlineMath: [['$','$'], ['\\(','\\)']],
+        processEscapes: true
+      }
+    });
+  </script>
+  <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/2.0-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  <!-- <script src="https://c328740.ssl.cf1.rackcdn.com/mathjax/2.0-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+  </script> -->
+  <script>window.MathJax || document.write('<script type="text/x-mathjax-config">MathJax.Hub.Config({"HTML-CSS":{imageFont:null}});<\/script><script src="libraries/widgets/mathjax/MathJax.js?config=TeX-AMS-MML_HTMLorMML"><\/script>')
+</script>
+<!-- LOAD HIGHLIGHTER JS FILES -->
+  <script src="libraries/highlighters/highlight.js/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <!-- DONE LOADING HIGHLIGHTER JS FILES -->
+   
+  </html>
