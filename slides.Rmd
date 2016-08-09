@@ -7,7 +7,7 @@ Here you can find slides from past meetups.
 ### August 4, 2016 (Visualisation special)
 - [Analyzing the Bührer family data set using an advanced mosaic plot.](http://de.slideshare.net/Zurich_R_User_Group/analyzing-the-bhrer-family-data-set-using-an-advanced-mosaic-plot) (Thomas Roth)
 - [Mapping health during travel: a visualization of a trip through Thailand.](http://de.slideshare.net/Zurich_R_User_Group/visualization-challenge-mapping-health-during-travel) (Andrea Farnham, UZH)
-- [Interactive Javascript in R with rCharts](http://htmlpreview.github.io/?https://raw.githubusercontent.com/Zurich-R-User-Group/Zurich-R-User-Group.github.io/master/_files/slides/matteo-rcharts/index.html) (Matteo Casserini)
+- [Interactive Javascript in R with rCharts](http://htmlpreview.github.io/?https://raw.githubusercontent.com/Zurich-R-User-Group/Zurich-R-User-Group.github.io/master/_files/slides/matteo-rcharts/index.html) (Matteo Casserini, Centralway)
 - [Animation of political shifts in elections](https://github.com/srfdata/2015-09-elections-political-shifts/blob/master/analysis/main.Rmd) (Timo Grossenbacher, SNF)
 - [An interactive map with R-Shiny and leaflet](http://de.slideshare.net/Zurich_R_User_Group/an-interactive-map-with-rshiny-and-leaflet) (Bojan Škerlak, Migros)
 - [Federal election 2015 : visualizing the panachage-statistics](http://www.web.statistik.zh.ch/cms_vis/meetup/panachage.html) (Thomas Lo Russo, Statistical Office Zurich)
