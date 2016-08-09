@@ -1,5 +1,5 @@
 name: "Zurich-R-User-Group"
-output_dir: "_site"
+output_dir: "."
 navbar:
   title: "Zurich R User Group"
   left:
