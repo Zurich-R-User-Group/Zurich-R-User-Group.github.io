@@ -12,12 +12,15 @@ We will try to gather information about our [meetups](http://www.meetup.com/Zuri
 
 
 ### News
-#### Next meetup on Wednesday, August 3, 2016
-The next meetup will be a [visualisation spezial](http://www.meetup.com/Zurich-R-User-Group/events/231840730/).
+#### Talk by Dr. Edzer Pebesma at UZH
+On Tuesday September 13th, 10:00-11:00, Dr. Edzer Pebesma is giving a talk
+about Reproducible Research at the University of Zurich, Irchel campus. He is
+well known in the R spatial community. The abstract can be found
+[here](http://www.geo.uzh.ch/microsite/reproducible_research/poster/GIUZ_Pebesma_abstract.pdf).
 
-You are interested in seeing and learning about some neat visualisations in R? 
-[RSVP on the meetup site](http://www.meetup.com/Zurich-R-User-Group/events/231840730/) and come by!
-
+#### Next meetup end of September
+We are looking for speakers and a sponsor for our next meetup. Please contact
+us if you are interested!
 
 
 ----
