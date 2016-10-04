@@ -64,7 +64,7 @@ title: false
 
 Easiest Way to Set Up Project: RStudio
 ========================================================
-![Setup](MeetupPresentation-figure/Setup.PNG)
+![Setup](MeetupPresentation-figure/Setup.png)
 
 ***
 - basic template available directly in RStudio
