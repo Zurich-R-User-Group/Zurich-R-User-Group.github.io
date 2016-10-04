@@ -38,7 +38,7 @@ Motivation
 - Solution approach: Prototyping with [**R shiny**](http://shiny.rstudio.com/)
 
 ***
-![Motivation](MeetupPresentation-figure/Motivation.png)
+![Motivation](https://github.com/Zurich-R-User-Group/Zurich-R-User-Group.github.io/blob/master/_files/slides/nadja-shiny/MeetupPresentation-figure/Motivation.png)
 
 Outline
 ========================================================
@@ -52,7 +52,7 @@ Outline
 - Deployment
 
 ***
-![Overview](MeetupPresentation-figure/Overview.png)
+![Overview](https://github.com/Zurich-R-User-Group/Zurich-R-User-Group.github.io/blob/master/_files/slides/nadja-shiny/MeetupPresentation-figure/Overview.png)
 
 
 Chapterslide
@@ -64,7 +64,7 @@ title: false
 
 Easiest Way to Set Up Project: RStudio
 ========================================================
-![Setup](MeetupPresentation-figure/Setup.png)
+![Setup](https://github.com/Zurich-R-User-Group/Zurich-R-User-Group.github.io/blob/master/_files/slides/nadja-shiny/MeetupPresentation-figure/Setup.png)
 
 ***
 - basic template available directly in RStudio
@@ -101,7 +101,7 @@ Widgets & Reactive Environments
 - How To Intro, see [Tutorial](http://shiny.rstudio.com/tutorial/lesson3/)
 - [Widgets Gallery](http://shiny.rstudio.com/gallery/widget-gallery.html) with example source code
 
-![Widgets](MeetupPresentation-figure/Widgets.PNG)
+![Widgets](https://github.com/Zurich-R-User-Group/Zurich-R-User-Group.github.io/blob/master/_files/slides/nadja-shiny/MeetupPresentation-figure/Widgets.PNG)
 
 ***
 
@@ -188,7 +188,7 @@ right: 25%
 ## Many thanks for your attention!
 
 ***
-[![Logo](MeetupPresentation-figure/ZuhlkeLogo.jpg)](https://www.zuehlke.com
+[![Logo](https://github.com/Zurich-R-User-Group/Zurich-R-User-Group.github.io/blob/master/_files/slides/nadja-shiny/MeetupPresentation-figure/ZuhlkeLogo.jpg)](https://www.zuehlke.com
 )
 www.zuehlke.com
 
