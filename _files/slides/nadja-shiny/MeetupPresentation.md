@@ -64,6 +64,7 @@ title: false
 
 Easiest Way to Set Up Project: RStudio
 ========================================================
+
 ![Setup](https://github.com/Zurich-R-User-Group/Zurich-R-User-Group.github.io/blob/master/_files/slides/nadja-shiny/MeetupPresentation-figure/Setup.png)
 
 ***
