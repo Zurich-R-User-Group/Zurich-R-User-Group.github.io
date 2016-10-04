@@ -38,7 +38,7 @@ Motivation
 - Solution approach: Prototyping with [**R shiny**](http://shiny.rstudio.com/)
 
 ***
-![Motivation](https://github.com/Zurich-R-User-Group/Zurich-R-User-Group.github.io/blob/master/_files/slides/nadja-shiny/MeetupPresentation-figure/Motivation.png)
+![Motivation](https://raw.githubusercontent.com/Zurich-R-User-Group/Zurich-R-User-Group.github.io/master/_files/slides/nadja-shiny/MeetupPresentation-figure/Motivation.png)
 
 Outline
 ========================================================
@@ -52,7 +52,7 @@ Outline
 - Deployment
 
 ***
-![Overview](https://github.com/Zurich-R-User-Group/Zurich-R-User-Group.github.io/blob/master/_files/slides/nadja-shiny/MeetupPresentation-figure/Overview.png)
+![Overview](https://raw.githubusercontent.com/Zurich-R-User-Group/Zurich-R-User-Group.github.io/master/_files/slides/nadja-shiny/MeetupPresentation-figure/Overview.png)
 
 
 Chapterslide
@@ -65,7 +65,7 @@ title: false
 Easiest Way to Set Up Project: RStudio
 ========================================================
 
-![Setup](https://github.com/Zurich-R-User-Group/Zurich-R-User-Group.github.io/blob/master/_files/slides/nadja-shiny/MeetupPresentation-figure/Setup.png)
+![Setup](https://raw.githubusercontent.com/Zurich-R-User-Group/Zurich-R-User-Group.github.io/master/_files/slides/nadja-shiny/MeetupPresentation-figure/Setup.png)
 
 ***
 - basic template available directly in RStudio
@@ -100,7 +100,7 @@ Widgets & Reactive Environments
 - How To Intro, see [Tutorial](http://shiny.rstudio.com/tutorial/lesson3/)
 - [Widgets Gallery](http://shiny.rstudio.com/gallery/widget-gallery.html) with example source code
 
-![Widgets](https://github.com/Zurich-R-User-Group/Zurich-R-User-Group.github.io/blob/master/_files/slides/nadja-shiny/MeetupPresentation-figure/Widgets.PNG)
+![Widgets](https://raw.githubusercontent.com/Zurich-R-User-Group/Zurich-R-User-Group.github.io/master/_files/slides/nadja-shiny/MeetupPresentation-figure/Widgets.PNG)
 
 ***
 
@@ -187,7 +187,7 @@ right: 25%
 ## Many thanks for your attention!
 
 ***
-[![Logo](https://github.com/Zurich-R-User-Group/Zurich-R-User-Group.github.io/blob/master/_files/slides/nadja-shiny/MeetupPresentation-figure/ZuhlkeLogo.jpg)](https://www.zuehlke.com
+[![Logo](https://raw.githubusercontent.com/Zurich-R-User-Group/Zurich-R-User-Group.github.io/master/_files/slides/nadja-shiny/MeetupPresentation-figure/ZuhlkeLogo.jpg)](https://www.zuehlke.com
 )
 www.zuehlke.com
 
