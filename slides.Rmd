@@ -4,6 +4,11 @@ title: "Slides"
 
 Here you can find slides from past meetups.
 
+### September 29, 2016
+- [Fast Prototyping in R - a brief Introduction to R Shiny](http://htmlpreview.github.io/?https://github.com/Zurich-R-User-Group/Zurich-R-User-Group.github.io/blob/master/_files/slides/nadja-shiny/MeetupPresentation.html#/) (Nadja Ulrich, Zühlke)     [Code](https://github.com/naulrich/ZurichRUserMeetup)
+- Clean, code, analyze and visualize election data in R: An example from datajournalism (Marie-José Kolly & Marvin Milatz, NZZ)
+
+
 ### August 4, 2016 (Visualisation special)
 - [Analyzing the Bührer family data set using an advanced mosaic plot.](http://de.slideshare.net/Zurich_R_User_Group/analyzing-the-bhrer-family-data-set-using-an-advanced-mosaic-plot) (Thomas Roth)
 - [Mapping health during travel: a visualization of a trip through Thailand.](http://de.slideshare.net/Zurich_R_User_Group/visualization-challenge-mapping-health-during-travel) (Andrea Farnham, UZH)
