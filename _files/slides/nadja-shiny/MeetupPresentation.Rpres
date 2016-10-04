@@ -1,0 +1,197 @@
+<!-- A few CSS tweaks -------------------------------------------------------->
+<style>
+.section .reveal .state-background {
+   background: #2C8C72;
+}
+.reveal h1, .reveal h2, .reveal h3 {
+  word-wrap: normal;
+  -moz-hyphens: none;
+}
+.chaptertitle {
+    color: black;
+    position: fixed;
+    top: 90%;
+    text-align:left;
+    width:100%;
+}
+</style>
+
+<!-- Slides ------------------------------------------------------------------->
+
+Fast Prototyping in R
+========================================================
+width: 1600
+height: 900
+
+## a brief Introduction to R Shiny
+
+Nadja Ulrich <br>
+Zurich R User MeetUp <br>
+29.09.2016
+
+Motivation
+========================================================
+- There are very **variable stakeholders** with different backgrounds.
+- We need a **tangible product vision** to align expectations
+  + algorithmical & mathematical complexity
+  + mind "the Excel Gap"
+- Solution approach: Prototyping with [**R shiny**](http://shiny.rstudio.com/)
+
+***
+![Motivation](MeetupPresentation-figure/Motivation.png)
+
+Outline
+========================================================
+- Basic Concepts
+ + Setup & File Structure
+ + Widgets & Reactive Environments
+- Extensions (Selection)
+ + shinydashboard
+ + charts & maps
+ + upload & export functions
+- Deployment
+
+***
+![Overview](MeetupPresentation-figure/Overview.png)
+
+
+Chapterslide
+========================================================
+title: false
+<div class="chaptertitle" style="margin-top:-200px;">
+<h1>Basic Concepts</h1>
+</div>
+
+Easiest Way to Set Up Project: RStudio
+========================================================
+![Setup](MeetupPresentation-figure/Setup.PNG)
+
+***
+- basic template available directly in RStudio
+- choose single file (app.R) or multifile (ui.R, server.R) option - according to project size
+- hello-world example integrated
+
+- alternative: choose template of choice online (eg. shinydashboards)
+
+Setup & File Structure
+========================================================
+- essential parts:
+  - ui
+  - server
+  - run command (if not run from RStudio)
+- recommended: <br> invest a few seconds to think about a good file structure, it pays off ;)
+
+***
+example high-level filestructure
+```{r, echo=FALSE, fig.align = 'center'}
+library(knitr)
+my_df <- data.frame(Name = c("libraries.R", "ui.R", "server.R", "www/..", "utils/.."),
+                    Content = c("all libraries in use",
+                                "user interface - especially input fields & interaction",
+                                "all \"backend\" code snippets, output generation",
+                                "folder containing files regarding css etc (not mandatory)",
+                                "utils folder for more granular R files (not mandatory)"))
+kable(my_df)
+```
+
+
+Widgets & Reactive Environments
+========================================================
+**Widgets**
+- How To Intro, see [Tutorial](http://shiny.rstudio.com/tutorial/lesson3/)
+- [Widgets Gallery](http://shiny.rstudio.com/gallery/widget-gallery.html) with example source code
+
+![Widgets](MeetupPresentation-figure/Widgets.PNG)
+
+***
+
+**Reactive Environments**
+- Shiny enables real-time interactions. These parts are embedded in reactive environments, otherwise static
+- How To Intro, see [Tutorial 1](http://shiny.rstudio.com/tutorial/lesson4/), [Tutorial 2](http://shiny.rstudio.com/tutorial/lesson6/)
+
+
+Chapterslide
+========================================================
+title: false
+<div class="chaptertitle" style="margin-top:-200px;">
+<h1>Extensions (Selection)</h1>
+</div>
+
+Extensions
+========================================================
+There are many (well-documented) to extend your basic shiny app. Here, I collected a few of my favourite widgets and libraries
+* [shinydashboard](https://rstudio.github.io/shinydashboard/)
+* [Data Tables (DT)](http://rstudio.github.io/DT/)
+* [rCharts](http://rstudio.github.io/DT/)
+* maps embedding with [leaflet](http://rstudio.github.io/leaflet/)
+* [Data upload](http://shiny.rstudio.com/gallery/file-upload.html) (eg. from Excel)
+* [Data download/export](http://shiny.rstudio.com/gallery/file-download.html)
+
+Further inspiration, see [articles](http://shiny.rstudio.com/articles/) on official R shiny homepage, or galeries.
+
+Chapterslide
+========================================================
+title: false
+<div class="chaptertitle" style="margin-top:-200px;">
+<h1>Deployment</h1>
+</div>
+
+Deployment Options
+========================================================
+**Local**
+- start shiny app from your local RStudio
+- self-contained desktop application via [Portable App](https://www.r-bloggers.com/deploying-desktop-apps-with-r/) - Remarks: no need for local admin permissions, only useful for a very few users or a simple demo
+
+**On-Premise Server**
+- [R Shiny Server](https://www.rstudio.com/products/shiny/shiny-server/)
+- deploying shiny applications
+- pro version with more options regarding security / authentication, tuning / scaling / monitoring)
+
+**Hosted**
+- [shinyapps.io](http://www.shinyapps.io/)
+- different subscription models (from free to expensive)
+- service level regarding number of applications, authentication, support etc depending on subscription model
+
+Sources
+========================================================
+**Shiny Ecosystem**
+- [R shiny](http://shiny.rstudio.com/)
+- [Articles](http://shiny.rstudio.com/articles/), [Tutorials](http://shiny.rstudio.com/tutorial/), [Widgets Gallery](http://shiny.rstudio.com/gallery/widget-gallery.html)
+- [R shiny server and shinyapps.io](http://shiny.rstudio.com/deploy/)
+- Deploying Shiny as portable App [Tutorial](https://www.r-bloggers.com/deploying-desktop-apps-with-r/)
+
+<br>
+**Extensions & Libraries in Demo**
+- [shinydashboard](https://rstudio.github.io/shinydashboard/)
+- [Data upload](http://shiny.rstudio.com/gallery/file-upload.html) and [download/export](http://shiny.rstudio.com/gallery/file-download.html)
+- [Data Tables (DT)](http://rstudio.github.io/DT/)
+- [rCharts](http://rstudio.github.io/DT/)
+- Maps with [leaflet](http://rstudio.github.io/leaflet/)
+
+***
+**Galleries & Examples**
+- [R shiny Gallery](http://shiny.rstudio.com/gallery/)
+- extensive overview of [Shiny Use Cases](https://www.rstudio.com/products/shiny/shiny-user-showcase/)
+- another [Shiny Gallery](http://www.showmeshiny.com/) with great ideas
+- [Bus-Map Example](https://gallery.shinyapps.io/086-bus-dashboard/), [Sourcecode](https://github.com/rstudio/shiny-examples/tree/master/086-bus-dashboard)
+
+
+<br>
+These slides are based on [R presentation](https://support.rstudio.com/hc/en-us/articles/200486468) and some CSS [tweaks](http://rstudio-pubs-static.s3.amazonaws.com/27777_55697c3a476640caa0ad2099fe914ae5.html#)
+
+
+Goodbye Slide
+========================================================
+title: false
+right: 25%
+
+## Many thanks for your attention!
+
+***
+[![Logo](MeetupPresentation-figure/ZuhlkeLogo.jpg)](https://www.zuehlke.com
+)
+www.zuehlke.com
+
+Contact:
+Nadja Ulrich,
+nadja.ulrich@zuehlke.com
