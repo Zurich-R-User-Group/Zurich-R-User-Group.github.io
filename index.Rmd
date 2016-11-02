@@ -15,7 +15,7 @@ We will try to gather information about our [meetups](http://www.meetup.com/Zuri
 
 #### Data science [Lunchveranstaltung](http://t.uzh.ch/C)
 There will a couple of talks about data science in the next few weeks at
-UZH main building. Time is allways wednesdays 12.30 - 13.30. 
+UZH main building. Time is always wednesdays 12.30 - 13.30. 
 
 #### Our meetup will turn 1 
 The Zurich R User Group was founded on November 18 2015 and
