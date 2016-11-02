@@ -13,9 +13,13 @@ We will try to gather information about our [meetups](http://www.meetup.com/Zuri
 
 ### News
 
-#### Our meetup will turn 1 year old
-The Zurich R User Group was founded on November 18 2016 and
-already we have 491 group members and organised 6 meetups.
+#### Data science [Lunchveranstaltung](http://t.uzh.ch/C)
+There will a couple of talks about data science in the next few weeks at
+UZH main building. Time is allways wednesdays 12.30 - 13.30. 
+
+#### Our meetup will turn 1 
+The Zurich R User Group was founded on November 18 2015 and
+already we have more than 500 group members and organised 6 meetups.
 
 #### Save the date for the ODD 2017
 We will organize a hackathon for the next Open Data Day on the 4th of March.
