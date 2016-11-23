@@ -208,6 +208,48 @@ $(document).ready(function () {
 
 
 <p>You want to improve public transport of your city? You know how to wrangle and analyse data? Then this hackathon is for you!</p>
+<pre class="r"><code>library(&quot;ggmap&quot;)
+zrh &lt;- get_map(location = &quot;Zurich&quot;, zoom = 12, source=&quot;stamen&quot;, maptype=&quot;toner&quot;)</code></pre>
+<pre><code>## Map from URL : http://maps.googleapis.com/maps/api/staticmap?center=Zurich&amp;zoom=12&amp;size=640x640&amp;scale=2&amp;maptype=terrain&amp;sensor=false</code></pre>
+<pre><code>## Information from URL : http://maps.googleapis.com/maps/api/geocode/json?address=Zurich&amp;sensor=false</code></pre>
+<pre><code>## Map from URL : http://tile.stamen.com/toner/12/2143/1433.png</code></pre>
+<pre><code>## Warning in file.remove(index[[url]]): cannot remove file
+## &#39;fa1b06cc644e41b57bba0896179f577e.rds&#39;, reason &#39;No such file or directory&#39;</code></pre>
+<pre><code>## Map from URL : http://tile.stamen.com/toner/12/2144/1433.png</code></pre>
+<pre><code>## Warning in file.remove(index[[url]]): cannot remove file
+## &#39;0148026c15fd51e6402a696c2b0239f8.rds&#39;, reason &#39;No such file or directory&#39;</code></pre>
+<pre><code>## Map from URL : http://tile.stamen.com/toner/12/2145/1433.png</code></pre>
+<pre><code>## Warning in file.remove(index[[url]]): cannot remove file
+## &#39;0fdb2d1fdc1c0fa33ec7424ac7339942.rds&#39;, reason &#39;No such file or directory&#39;</code></pre>
+<pre><code>## Map from URL : http://tile.stamen.com/toner/12/2146/1433.png</code></pre>
+<pre><code>## Warning in file.remove(index[[url]]): cannot remove file
+## &#39;a777fd210b832a37cff3e6f64d9e7b72.rds&#39;, reason &#39;No such file or directory&#39;</code></pre>
+<pre><code>## Map from URL : http://tile.stamen.com/toner/12/2143/1434.png</code></pre>
+<pre><code>## Warning in file.remove(index[[url]]): cannot remove file
+## &#39;a0a309d3fcfee22635f0422e741f54bf.rds&#39;, reason &#39;No such file or directory&#39;</code></pre>
+<pre><code>## Map from URL : http://tile.stamen.com/toner/12/2144/1434.png</code></pre>
+<pre><code>## Warning in file.remove(index[[url]]): cannot remove file
+## &#39;866f7462ddc01787e865d12faa2d354f.rds&#39;, reason &#39;No such file or directory&#39;</code></pre>
+<pre><code>## Map from URL : http://tile.stamen.com/toner/12/2145/1434.png</code></pre>
+<pre><code>## Warning in file.remove(index[[url]]): cannot remove file
+## &#39;f1a8e999777e9f407edc2bcb57b2359c.rds&#39;, reason &#39;No such file or directory&#39;</code></pre>
+<pre><code>## Map from URL : http://tile.stamen.com/toner/12/2146/1434.png</code></pre>
+<pre><code>## Warning in file.remove(index[[url]]): cannot remove file
+## &#39;ef9ccb0d8d9bac6a39610c83b93e1485.rds&#39;, reason &#39;No such file or directory&#39;</code></pre>
+<pre><code>## Map from URL : http://tile.stamen.com/toner/12/2143/1435.png</code></pre>
+<pre><code>## Warning in file.remove(index[[url]]): cannot remove file
+## &#39;10888dd1e030b8c0ad57694d60f1591d.rds&#39;, reason &#39;No such file or directory&#39;</code></pre>
+<pre><code>## Map from URL : http://tile.stamen.com/toner/12/2144/1435.png</code></pre>
+<pre><code>## Warning in file.remove(index[[url]]): cannot remove file
+## &#39;ca0c926c7ce779fb8b7bc77a95293822.rds&#39;, reason &#39;No such file or directory&#39;</code></pre>
+<pre><code>## Map from URL : http://tile.stamen.com/toner/12/2145/1435.png</code></pre>
+<pre><code>## Warning in file.remove(index[[url]]): cannot remove file
+## &#39;6b41044671642a585e96f8c320fad3f1.rds&#39;, reason &#39;No such file or directory&#39;</code></pre>
+<pre><code>## Map from URL : http://tile.stamen.com/toner/12/2146/1435.png</code></pre>
+<pre><code>## Warning in file.remove(index[[url]]): cannot remove file
+## &#39;78914dbf5ac6a3b8f23f4135f26b93d3.rds&#39;, reason &#39;No such file or directory&#39;</code></pre>
+<pre class="r"><code>ggmap(zrh)</code></pre>
+<p><img src="hackathon_files/figure-html/unnamed-chunk-1-1.png" width="672" /></p>
 <p>Toghether with <a href="https://data.stadt-zuerich.ch/">Open Data Zurich</a> and <a href="https://www.stadt-zuerich.ch/vbz/en/index.html">VBZ</a> we are planning planning a hackathon for the</p>
 <p><strong>Open Data Day on Saturday March 4th 2017</strong>.</p>
 <p>The event will include time for hacking but we will also invite some speakers for talks. Food and drinks will be provided. All you have to bring is your laptop.</p>
