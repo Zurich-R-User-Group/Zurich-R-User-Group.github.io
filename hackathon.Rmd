@@ -1,0 +1,19 @@
+---
+title: "Open Data Day Hackathon"
+---
+
+You want to improve public transport of your city? You know how to wrangle and
+analyse data? Then this hackathon is for you!
+
+Toghether with 
+[Open Data Zurich](https://data.stadt-zuerich.ch/) and
+[VBZ](https://www.stadt-zuerich.ch/vbz/en/index.html) 
+we are planning planning a hackathon for the 
+
+**Open Data Day on Saturday March 4th 2017**.
+
+The event will include time for hacking but we will also invite some speakers
+for talks. Food and drinks will be provided. All you have to bring is your
+laptop.
+
+Details will follow soon...
