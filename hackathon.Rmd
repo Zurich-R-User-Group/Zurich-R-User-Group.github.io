@@ -5,7 +5,7 @@ title: "Open Data Day Hackathon"
 You want to improve public transport of your city? You know how to wrangle and
 analyse data? Then this hackathon is for you!
 
-```{r}
+```{r, echo=FALSE, message=FALSE, warning=FALSE}
 library("ggmap")
 zrh <- get_map(location = "Zurich", zoom = 12, source="stamen", maptype="toner")
 ggmap(zrh)
