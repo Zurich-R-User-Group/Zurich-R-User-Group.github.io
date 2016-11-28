@@ -2,13 +2,13 @@
 title: "Open Data Day Hackathon"
 ---
 
-You want to improve public transport of your city? You know how to wrangle and
-analyse data? Then this hackathon is for you!
+You want to improve public transport of your city? You know how to wrangle,
+analyse, visualise or communicate data? Then this hackathon is for you!
 
 ```{r, echo=FALSE, message=FALSE, warning=FALSE}
-library("ggmap")
-zrh <- get_map(location = "Zurich", zoom = 12, source="stamen", maptype="toner")
-ggmap(zrh)
+# library("ggmap")
+# zrh <- get_map(location = "Zurich", zoom = 12, source="stamen", maptype="toner")
+# ggmap(zrh)
 ```
 
 
@@ -23,7 +23,21 @@ The event will include time for hacking but we will also invite some speakers
 for talks. Food and drinks will be provided. All you have to bring is your
 laptop.
 
-Details will follow soon...
+You do not need to be a data science superhero yet. It is completely fine if you 
+have basic skills in **one** of the following:
+
+- Combining and cleaning data sets
+- Creating graphs and visualisations
+- Creating statistics or models
+- Creating slides, documents, websites or anything else to communicate the results
+
+For analysis you can use *any open data* you like. VBZ provides *transport delay* 
+and *passenger count* data via the [Zurich Open Data Portal](). The goal is it to
+use open source software (such as R) to get interesting new insights and share 
+them with the world. 
+
+
+More details will follow soon...
 
 
 ----
