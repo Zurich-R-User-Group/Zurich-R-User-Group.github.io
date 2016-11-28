@@ -13,7 +13,7 @@ ggmap(zrh)
 
 
 Toghether with 
-[Open Data Zurich](https://data.stadt-zuerich.ch/) and
+[Open Data Zurich](https://www.stadt-zuerich.ch/opendata) and
 [VBZ](https://www.stadt-zuerich.ch/vbz/en/index.html) 
 we are planning planning a hackathon for the 
 
