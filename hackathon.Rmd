@@ -4,25 +4,19 @@ title: "Open Data Day Hackathon"
 
 Can you imagine ways to improve public transport in your city? Do you know or wish to learn how to wrangle, analyse, visualize or communicate with data? Join our upcoming hackathon in Zürich, meet people from the open data community - and let's make an impact together on all the ways we get around!
 
-```{r, echo=FALSE, message=FALSE, warning=FALSE}
+```{r, echo=FALSE, message=FALSE, warning=FALSE, cache=TRUE}
 library("ggmap")
 zrh <- get_map(location = "Zurich", zoom = 12, source="stamen", maptype="toner")
 ggmap(zrh)
 ```
 
 
-<<<<<<< HEAD
 Toghether with 
 [Open Data Zurich](https://www.stadt-zuerich.ch/opendata) and
 [VBZ](https://www.stadt-zuerich.ch/vbz/en/index.html) 
-we are planning planning a hackathon for the 
-=======
-Together with 
-[Open Data Zurich](https://data.stadt-zuerich.ch/),
-[VBZ](https://www.stadt-zuerich.ch/vbz/en/index.html) and [Opendata.ch](http://opendata.ch), 
 the [Zürich R Meetup Group](https://www.meetup.com/Zurich-R-User-Group/messages/boards/) is 
-planning to hold a hackathon on occasion of
->>>>>>> d894d5c852e3c75f7d3bc5e16209013639b2d486
+planning to hold a hackathon on occasion of the
+
 
 **[Open Data Day](http://opendataday.org/) - Saturday, March 4, 2017**.
 
@@ -40,7 +34,7 @@ have basic skills in **one** of the following:
 
 For analysis you can use *any open data* you like. VBZ provides *transport delay* 
 and *passenger count* data via the [Zurich Open Data Portal](https://data.stadt-zuerich.ch/dataset?sort=score+desc%2C+metadata_modified+desc&tags=vbz). The goal is it to
-use open source software (such as from [R Project](https://www.r-project.org/)) to 
+use open source software (such as [R](https://www.r-project.org/)) to 
 get interesting new insights and share them with the world. 
 
 More details to follow - please join the [Zürich R Meetup Group](https://www.meetup.com/Zurich-R-User-Group/messages/boards/) to get announcements, and stay tuned!
@@ -50,4 +44,5 @@ More details to follow - please join the [Zürich R Meetup Group](https://www.me
 Partners: 
 [Open Data Zurich](https://data.stadt-zuerich.ch/),
 [VBZ](https://www.stadt-zuerich.ch/vbz/en/index.html),
-[Master Program in Biostatistics UZH](http://www.biostat.uzh.ch/)
+[Master Program in Biostatistics UZH](http://www.biostat.uzh.ch/),
+[Opendata.ch](http://opendata.ch)
