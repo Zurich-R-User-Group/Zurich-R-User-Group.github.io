@@ -10,7 +10,7 @@ zrh <- get_map(location = "Zurich", zoom = 12, source="stamen", maptype="toner")
 ggmap(zrh)
 ```
 
-
+<div class="boxed">
 Toghether with 
 [Open Data Zurich](https://www.stadt-zuerich.ch/opendata) and
 [VBZ](https://www.stadt-zuerich.ch/vbz/en/index.html) 
@@ -23,6 +23,7 @@ planning to hold a hackathon on occasion of the
 The event will include time for hacking but we will also invite some speakers
 for talks. Food and drinks will be provided. All you have to bring is your
 laptop.
+</div> 
 
 You do not need to be a data science superhero yet. It is completely fine if you 
 have basic skills in **one** of the following:
