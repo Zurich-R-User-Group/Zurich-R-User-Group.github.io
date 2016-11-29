@@ -9,7 +9,7 @@ navbar:
       href: about.html
     - text: "Slides"
       href: slides.html
-    - text: ""
+    - text: "ODD Hackathon"
       href: hackathon.html
   right:
     - text: "Meetup page"
