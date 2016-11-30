@@ -5,10 +5,10 @@ title: "Slides"
 Here you can find slides from past meetups.
 
 ### November 29, 2016 (How R is used in different professions)
-- Make it simpleR! (Raymond Zychowicz)  
-- R in Finance: Using R in a productive and highly regulated environment (Gabriel Foix) 
+- Make it simpleR! (Raymond Zychowicz, UBS)  
+- R in Finance: Using R in a productive and highly regulated environment (Gabriel Foix, Mirai Solutions) 
 - R for Car Insurance Product (Claudio Giancaterino) 
-- Using Shiny for worldwide climate monitoring (David Masson)
+- Using Shiny for worldwide climate monitoring (David Masson, CelsiusPro)
 
 ### September 29, 2016
 - [Fast Prototyping in R - a brief Introduction to R Shiny](http://htmlpreview.github.io/?https://github.com/Zurich-R-User-Group/Zurich-R-User-Group.github.io/blob/master/_files/slides/nadja-shiny/MeetupPresentation.html#/) (Nadja Ulrich, Zühlke)     [Code](https://github.com/naulrich/ZurichRUserMeetup)
@@ -16,7 +16,7 @@ Here you can find slides from past meetups.
 
 
 ### August 4, 2016 (Visualisation special)
-- [Analyzing the Bührer family data set using an advanced mosaic plot.](http://de.slideshare.net/Zurich_R_User_Group/analyzing-the-bhrer-family-data-set-using-an-advanced-mosaic-plot) (Thomas Roth)
+- [Analyzing the Bührer family data set using an advanced mosaic plot.](http://de.slideshare.net/Zurich_R_User_Group/analyzing-the-bhrer-family-data-set-using-an-advanced-mosaic-plot) (Thomas Roth, ZHAW)
 - [Mapping health during travel: a visualization of a trip through Thailand.](http://de.slideshare.net/Zurich_R_User_Group/visualization-challenge-mapping-health-during-travel) (Andrea Farnham, UZH)
 - [Interactive Javascript in R with rCharts](http://htmlpreview.github.io/?https://raw.githubusercontent.com/Zurich-R-User-Group/Zurich-R-User-Group.github.io/master/_files/slides/matteo-rcharts/index.html) (Matteo Casserini, Centralway)
 - [Animation of political shifts in elections](https://github.com/srfdata/2015-09-elections-political-shifts/blob/master/analysis/main.Rmd) (Timo Grossenbacher, SRF)
