@@ -9,11 +9,13 @@ navbar:
       href: about.html
     - text: "Slides"
       href: slides.html
-    - text: ""
+    - text: "ODD Hackathon"
       href: hackathon.html
   right:
     - text: "Meetup page"
       href: http://www.meetup.com/Zurich-R-User-Group/
+    - icon: ion-social-twitter
+      href: https://twitter.com/ZurichRUsers
 
 output:
   html_document:
