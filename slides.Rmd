@@ -6,8 +6,8 @@ Here you can find slides from past meetups.
 
 ### November 29, 2016 (How R is used in different professions)
 - Make it simpleR! (Raymond Zychowicz, UBS)  
-- R in Finance: Using R in a productive and highly regulated environment (Gabriel Foix, Mirai Solutions) 
-- R for Car Insurance Product (Claudio Giancaterino) 
+- [R in Finance: Using R in a productive and highly regulated environment](http://www.slideshare.net/Zurich_R_User_Group/rinfinancegabrielfoix) (Gabriel Foix, Mirai Solutions) 
+- [R for Car Insurance Product](http://www.slideshare.net/Zurich_R_User_Group/how-to-use-r-in-different-professions-r-for-car-insurance-product-speaker-claudio-giancaterino) (Claudio Giancaterino) 
 - Using Shiny for worldwide climate monitoring (David Masson, CelsiusPro)
 
 ### September 29, 2016
