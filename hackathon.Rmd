@@ -33,14 +33,14 @@ have basic skills in **one** of the following:
 - Creating statistics or models
 - Creating slides, documents, websites or anything else to communicate the results
 
-For analysis you can use *any open data* you like. VBZ provides *transport delay* 
+For analyses you can use *any open data* you like. VBZ provides *transport delay* 
 and *passenger count* data via the [Zurich Open Data Portal](https://data.stadt-zuerich.ch/dataset?sort=score+desc%2C+metadata_modified+desc&tags=vbz). The goal is it to
 use open source software (such as [R](https://www.r-project.org/)) to 
 get interesting new insights and share them with the world. 
 
 <input type="button" onclick="location.href='https://docs.google.com/forms/d/e/1FAIpQLScX3UngiEGdmymcrbj8Wvpcw0vtDynJyekyWLYCP5qodzAPqg/viewform';" value="Sign up now!" />
 
-More details to follow - please join the [Zürich R Meetup Group](https://www.meetup.com/Zurich-R-User-Group/messages/boards/) to get announcements, and stay tuned!
+More details to follow, stay tuned!
 
 
 ----
