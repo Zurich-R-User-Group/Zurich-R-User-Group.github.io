@@ -39,6 +39,7 @@ use open source software (such as [R](https://www.r-project.org/)) to
 get interesting new insights and share them with the world. 
 
 <input type="button" onclick="location.href='https://docs.google.com/forms/d/e/1FAIpQLScX3UngiEGdmymcrbj8Wvpcw0vtDynJyekyWLYCP5qodzAPqg/viewform';" value="Sign up now!" />
+There is limited space. The first 60 people signed up get the spot. 
 
 More details to follow, stay tuned!
 
