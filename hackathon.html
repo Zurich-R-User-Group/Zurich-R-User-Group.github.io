@@ -19,13 +19,12 @@
 <script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<link href="site_libs/highlightjs-1.1/default.css" rel="stylesheet" />
+<script src="site_libs/highlightjs-1.1/highlight.js"></script>
 <link href="site_libs/ionicons-2.0.1/css/ionicons.min.css" rel="stylesheet" />
 
 <style type="text/css">code{white-space: pre;}</style>
-<link rel="stylesheet"
-      href="site_libs/highlight/default.css"
-      type="text/css" />
-<script src="site_libs/highlight/highlight.js"></script>
 <style type="text/css">
   pre:not([class]) {
     background-color: white;
@@ -95,6 +94,7 @@ button.code-folding-btn:focus {
 }
 </style>
 
+
 <style type="text/css">
 /* padding for bootstrap navbar */
 body {
@@ -151,7 +151,6 @@ $(document).ready(function () {
 <div class="container-fluid main-container">
 
 <!-- tabsets -->
-<script src="site_libs/navigation-1.0/tabsets.js"></script>
 <script>
 $(document).ready(function () {
   window.buildTabsets("TOC");
@@ -218,7 +217,8 @@ $(document).ready(function () {
 <p><img src="hackathon_files/figure-html/unnamed-chunk-1-1.png" width="672" /></p>
 <div class="boxed">
 <p>Toghether with <a href="https://www.stadt-zuerich.ch/opendata">Open Data Zurich</a> and <a href="https://www.stadt-zuerich.ch/vbz/en/index.html">VBZ</a> the <a href="https://www.meetup.com/Zurich-R-User-Group/messages/boards/">Zürich R Meetup Group</a> will hold a hackathon on occasion of the</p>
-<p><strong><a href="http://opendataday.org/">Open Data Day</a> - Saturday, March 4, 2017</strong>.</p>
+<p><strong><a href="http://opendataday.org/">Open Data Day</a> - Saturday, March 4, 2017</strong>.<br />
+09:00 - 18:00, UZH main building (Rämistrasse 71, rooms KO2-F-150 and KO2-F-152)</p>
 <p>The event will include time for hacking but we will also invite some speakers for talks. Food and drinks will be provided. All you have to bring is your laptop.</p>
 </div>
 <p>You do not need to be a data science superhero yet. It is completely fine if you have basic skills in <strong>one</strong> of the following:</p>
@@ -243,9 +243,13 @@ $(document).ready(function () {
 <script>
 
 // add bootstrap table styles to pandoc tables
-$(document).ready(function () {
+function bootstrapStylePandocTables() {
   $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
 });
+
 
 </script>
 
