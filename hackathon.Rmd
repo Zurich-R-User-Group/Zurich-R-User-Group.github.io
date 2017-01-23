@@ -42,12 +42,20 @@ get interesting new insights and share them with the world.
 <input type="button" onclick="location.href='https://docs.google.com/forms/d/e/1FAIpQLScX3UngiEGdmymcrbj8Wvpcw0vtDynJyekyWLYCP5qodzAPqg/viewform';" value="Sign up now!" />
 There is limited space. The first 60 people signed up get the spot. 
 
-We are starting to collect ideas on what we could do. Add your ideas [here](https://github.com/OpenDataDayZurich2016/ideas).
 
-More details to follow, stay tuned!
+----
+
+**Preparation for the event**
+
+- We are starting to collect ideas on what we could do. Add your ideas
+[here](https://github.com/OpenDataDayZurich2016/ideas).
+
+- We will do a data preparation evening on the February 21. 
+[RSVP here](https://www.meetup.com/Zurich-R-User-Group/events/237068776/).
 
 
 ----
+
 Partners: 
 [Open Data Zurich](https://data.stadt-zuerich.ch/),
 [VBZ](https://www.stadt-zuerich.ch/vbz/en/index.html),
