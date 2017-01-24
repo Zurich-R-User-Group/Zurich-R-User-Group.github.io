@@ -11,7 +11,7 @@ ggmap(zrh)
 ```
 
 <div class="boxed">
-Toghether with 
+Together with 
 [Open Data Zurich](https://www.stadt-zuerich.ch/opendata) and
 [VBZ](https://www.stadt-zuerich.ch/vbz/en/index.html) 
 the [Zürich R Meetup Group](https://www.meetup.com/Zurich-R-User-Group/messages/boards/) 
