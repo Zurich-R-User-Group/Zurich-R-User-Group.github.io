@@ -12,8 +12,9 @@ ggmap(zrh)
 
 <div class="boxed">
 Toghether with 
-[Open Data Zurich](https://www.stadt-zuerich.ch/opendata) and
-[VBZ](https://www.stadt-zuerich.ch/vbz/en/index.html) 
+[Open Data Zurich](https://www.stadt-zuerich.ch/opendata),
+[VBZ](https://www.stadt-zuerich.ch/vbz/en/index.html) and
+the [Master Program in Biostatistics UZH](http://www.biostat.uzh.ch/)
 the [Zürich R Meetup Group](https://www.meetup.com/Zurich-R-User-Group/messages/boards/) 
 will hold a hackathon on occasion of the
 
