@@ -63,3 +63,5 @@ Partners:
 [VBZ](https://www.stadt-zuerich.ch/vbz/en/index.html),
 [Master Program in Biostatistics UZH](http://www.biostat.uzh.ch/),
 [Opendata.ch](http://opendata.ch)
+
+\#ODDZurich
