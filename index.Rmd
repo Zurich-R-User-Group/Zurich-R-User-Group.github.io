@@ -13,13 +13,15 @@ We will try to gather information about our [meetups](http://www.meetup.com/Zuri
 
 ### News
 
+#### Reproducible Research Compendia via R packages
+Ben Marwick (University of Washington, Seattle) will present at ETH on March 2.
+Details [here](https://www.math.ethz.ch/sfs/news-and-events/seminar-applied-statistics.html)
+
 #### Save the date for the ODD 2017
 We will organize a hackathon for the next Open Data Day on the 4th of March.
 Details [here](http://zurich-r-user-group.github.io/hackathon.html).
 
-#### Data science [Lunchveranstaltung](http://t.uzh.ch/C)
-There will be a couple of talks about data science in the next few weeks at
-UZH main building. Time is always wednesdays 12.30 - 13.30. 
+
 
 
 
