@@ -4,6 +4,13 @@ title: "Slides"
 
 Here you can find slides from past meetups.
 
+
+### February 6, 2017
+- [Introduction to Renjin, the alternative engine for R ](https://www.slideshare.net/Zurich_R_User_Group/introduction-to-renjin-the-alternative-engine-for-r) (Maarten-Jan Kallen, BeDataDriven)
+- [R, y u do dis? ](https://github.com/christophM/r-y-u-do-dis/blob/master/presentation.Rmd) (Christoph Molnar)
+- Scraping Interactive Graphs with Selenium (Kushtrim Veseli, Swiss International Air Lines)
+
+
 ### November 29, 2016 (How R is used in different professions)
 - Make it simpleR! (Raymond Zychowicz, UBS)  
 - [R in Finance: Using R in a productive and highly regulated environment](http://www.slideshare.net/Zurich_R_User_Group/rinfinancegabrielfoix) (Gabriel Foix, Mirai Solutions) 
