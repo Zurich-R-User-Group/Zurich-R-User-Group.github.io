@@ -8,7 +8,7 @@ Here you can find slides from past meetups.
 ### February 6, 2017
 - [Introduction to Renjin, the alternative engine for R ](https://www.slideshare.net/Zurich_R_User_Group/introduction-to-renjin-the-alternative-engine-for-r) (Maarten-Jan Kallen, BeDataDriven)
 - [R, y u do dis? ](https://github.com/christophM/r-y-u-do-dis/blob/master/presentation.Rmd) (Christoph Molnar)
-- Scraping Interactive Graphs with Selenium (Kushtrim Veseli, Swiss International Air Lines) ([Code](http://htmlpreview.github.io/?https://raw.githubusercontent.com/Zurich-R-User-Group/Zurich-R-User-Group.github.io/master/_files/slides-code/538_polls_all.R))
+- Scraping Interactive Graphs with Selenium (Kushtrim Veseli, Swiss International Air Lines) ([C ode](https://github.com/Zurich-R-User-Group/Zurich-R-User-Group.github.io/blob/master/_files/slides-code/538_polls_all.R))
 
 
 ### November 29, 2016 (How R is used in different professions)
