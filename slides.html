@@ -4,7 +4,7 @@
 
 <head>
 
-<meta charset="utf-8">
+<meta charset="utf-8" />
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="generator" content="pandoc" />
 
@@ -20,8 +20,8 @@
 <script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
-<link href="site_libs/highlightjs-1.1/default.css" rel="stylesheet" />
-<script src="site_libs/highlightjs-1.1/highlight.js"></script>
+<link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
+<script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
 <link href="site_libs/ionicons-2.0.1/css/ionicons.min.css" rel="stylesheet" />
 
 <style type="text/css">code{white-space: pre;}</style>
@@ -31,10 +31,12 @@
   }
 </style>
 <script type="text/javascript">
-if (window.hljs && document.readyState && document.readyState === "complete") {
-   window.setTimeout(function() {
-      hljs.initHighlighting();
-   }, 0);
+if (window.hljs) {
+  hljs.configure({languages: []});
+  hljs.initHighlightingOnLoad();
+  if (document.readyState && document.readyState === "complete") {
+    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
+  }
 }
 </script>
 
@@ -214,6 +216,41 @@ $(document).ready(function () {
 
 
 <p>Here you can find slides from past meetups.</p>
+<div id="january-8-2017" class="section level3">
+<h3>January 8, 2017</h3>
+<ul>
+<li><a href="https://www.slideshare.net/NicolaLambiase/big-data-analytics-in-r-using-sparklyr">Big Data Analytics in R using sparklyr</a>, also available as <a href="https://gist.github.com/lambiase/f07ba853618a9219137fee0764671c94#file-nyc_tlc-rmd">Rmd</a> and <a href="https://cdn.rawgit.com/lambiase/f07ba853618a9219137fee0764671c94/raw/4f65642e012704f087a93e337ee10b486d53e544/nyc_tlc.html">html</a> files (Nicola Lambiase, Mirai-Solutions)</li>
+<li><a href="https://www.slideshare.net/Zurich_R_User_Group/anomaly-detection-database-integrated">Anomaly detection – database integrated</a> (Olaf Nimz, Trivadis)</li>
+</ul>
+</div>
+<div id="november-7-2017" class="section level3">
+<h3>November 7, 2017</h3>
+<ul>
+<li>Find all slides <a href="https://statistikzh.github.io/RMeetup/">here</a> (provided by the <a href="http://statistik.zh.ch/">Statistical Office of the Canton of Zurich</a>)</li>
+</ul>
+</div>
+<div id="september-4-2017" class="section level3">
+<h3>September 4, 2017</h3>
+<ul>
+<li>Open machine learning (Heidi Seibold, Epidemiology, Biostatistics and Prevention Institute, UZH)</li>
+<li><a href="https://docs.datahouse.ch/2017/RMeetup_September">Dynamic Pricing - Analyzing rapidly-changing prices</a> (Daniel Meister, datahouse)</li>
+<li><a href="https://www.slideshare.net/Zurich_R_User_Group/r-at-sanitas-workflow-problems-and-solutions">R at Sanitas – Workflow, Problems and Solutions</a> (Patrik Lengacher, Sanitas)</li>
+</ul>
+</div>
+<div id="may-3-2017" class="section level3">
+<h3>May 3, 2017</h3>
+<ul>
+<li><a href="https://www.slideshare.net/Zurich_R_User_Group/visualizing-the-frequency-of-transit-delays-using-qgis-and-the-leaflet-javascript-library-in-r">Visualizing the frequency of delays using QGIS and the Leaflet javascript library in R</a> (Peter B. Pearman and Thomas Roth)</li>
+<li><a href="https://www.slideshare.net/Zurich_R_User_Group/modeling-bus-bunching">Modelling Bus Bunching</a> (Andrea Farnham)</li>
+<li>How we organized the Hackathon (Heidi Seibold)</li>
+</ul>
+</div>
+<div id="april-10-2017" class="section level3">
+<h3>April 10, 2017</h3>
+<ul>
+<li><a href="https://github.com/krlmlr/remake-slides">Slides</a> and <a href="https://github.com/krlmlr/remake-tutorial">tutorial</a> (Kirill Müller, ETHZ/datatools GmbH)</li>
+</ul>
+</div>
 <div id="february-6-2017" class="section level3">
 <h3>February 6, 2017</h3>
 <ul>
@@ -304,7 +341,7 @@ $(document).ready(function () {
   (function () {
     var script = document.createElement("script");
     script.type = "text/javascript";
-    script.src  = "https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
     document.getElementsByTagName("head")[0].appendChild(script);
   })();
 </script>

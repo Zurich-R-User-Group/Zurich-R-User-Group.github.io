@@ -4,6 +4,31 @@ title: "Slides"
 
 Here you can find slides from past meetups.
 
+### January 8, 2017
+
+- [Big Data Analytics in R using sparklyr](https://www.slideshare.net/NicolaLambiase/big-data-analytics-in-r-using-sparklyr), also available as [Rmd](https://gist.github.com/lambiase/f07ba853618a9219137fee0764671c94#file-nyc_tlc-rmd) and [html](https://cdn.rawgit.com/lambiase/f07ba853618a9219137fee0764671c94/raw/4f65642e012704f087a93e337ee10b486d53e544/nyc_tlc.html) files (Nicola Lambiase, Mirai-Solutions)
+- [Anomaly detection – database integrated](https://www.slideshare.net/Zurich_R_User_Group/anomaly-detection-database-integrated) (Olaf Nimz, Trivadis)
+
+### November 7, 2017
+
+- Find all slides [here](https://statistikzh.github.io/RMeetup/) (provided by the [Statistical Office of the Canton of Zurich](http://statistik.zh.ch/))
+
+### September 4, 2017
+
+- Open machine learning (Heidi Seibold, Epidemiology, Biostatistics and Prevention Institute, UZH)
+- [Dynamic Pricing - Analyzing rapidly-changing prices](https://docs.datahouse.ch/2017/RMeetup_September) (Daniel Meister, datahouse)
+- [R at Sanitas – Workflow, Problems and
+Solutions](https://www.slideshare.net/Zurich_R_User_Group/r-at-sanitas-workflow-problems-and-solutions) (Patrik Lengacher, Sanitas)
+
+### May 3, 2017
+
+- [Visualizing the frequency of delays using QGIS and the Leaflet javascript library in R](https://www.slideshare.net/Zurich_R_User_Group/visualizing-the-frequency-of-transit-delays-using-qgis-and-the-leaflet-javascript-library-in-r) (Peter B. Pearman and Thomas Roth)
+- [Modelling Bus Bunching](https://www.slideshare.net/Zurich_R_User_Group/modeling-bus-bunching) (Andrea Farnham)
+- How we organized the Hackathon (Heidi Seibold)
+
+### April 10, 2017
+
+- [Slides](https://github.com/krlmlr/remake-slides) and [tutorial](https://github.com/krlmlr/remake-tutorial) (Kirill Müller, ETHZ/datatools GmbH)
 
 ### February 6, 2017
 - [Introduction to Renjin, the alternative engine for R ](https://www.slideshare.net/Zurich_R_User_Group/introduction-to-renjin-the-alternative-engine-for-r) (Maarten-Jan Kallen, BeDataDriven)
