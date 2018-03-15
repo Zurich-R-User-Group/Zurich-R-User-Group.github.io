@@ -1,0 +1,18 @@
+---
+title: "Sponsors and venues"
+---
+
+For our events we are always looking for sponsors and venues. If you would like to organize an event with us please [get in touch](index.html). In the past we have received support from the following companies and organizations:
+
+- [eBay](http://www.ebay.ch/)
+- [Impact Hub Zurich](https://zurich.impacthub.ch/)
+- [Microsoft](https://www.microsoft.com/en-us/)
+- [Mirai Solutions](http://www.mirai-solutions.ch/)
+- [PartnerRe](https://partnerre.com/)
+- [R Consortium](https://www.r-consortium.org/projects/r-user-group-support-program)
+- [RStudio](https://www.rstudio.com/)
+- [Sanitas](https://www.sanitas.com/)
+- [Statistical Office Kanton Zürich](https://statistik.zh.ch/internet/justiz_inneres/statistik/en/home.html)
+- [VBZ](https://www.stadt-zuerich.ch/vbz/en/index.html)
+- [Zühlke](https://www.zuehlke.com/ch/en/)
+- [Zurich R Courses](http://www.zhrcourses.uzh.ch/index_en.html)
