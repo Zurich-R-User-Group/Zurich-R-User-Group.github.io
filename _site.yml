@@ -9,8 +9,6 @@ navbar:
       href: about.html
     - text: "Slides"
       href: slides.html
-    - text: "ODD Hackathon"
-      href: hackathon.html
   right:
     - text: "Meetup page"
       href: http://www.meetup.com/Zurich-R-User-Group/
