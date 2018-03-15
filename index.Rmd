@@ -32,5 +32,5 @@ We are also happy to answer to general questions and feedback.
 <p><input type="email" name="_replyto" placeholder="Your email"></p>   
 <p><textarea name="message" placeholder="Your message"></textarea></p>
 <input type="submit" value="Send">
-<input type="hidden" name="_cc" value="jbracher@outlook.de" />
+<input type="hidden" name="_cc" value="murielburi@bluewin.ch,jbracher@outlook.de,dorothea.hug@gmail.com,andrea.schnell@statistik.ji.zh.ch" />
 </form> 
