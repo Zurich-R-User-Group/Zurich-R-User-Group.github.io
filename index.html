@@ -4,7 +4,7 @@
 
 <head>
 
-<meta charset="utf-8">
+<meta charset="utf-8" />
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="generator" content="pandoc" />
 
@@ -20,8 +20,8 @@
 <script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
-<link href="site_libs/highlightjs-1.1/default.css" rel="stylesheet" />
-<script src="site_libs/highlightjs-1.1/highlight.js"></script>
+<link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
+<script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
 <link href="site_libs/ionicons-2.0.1/css/ionicons.min.css" rel="stylesheet" />
 
 <style type="text/css">code{white-space: pre;}</style>
@@ -31,10 +31,12 @@
   }
 </style>
 <script type="text/javascript">
-if (window.hljs && document.readyState && document.readyState === "complete") {
-   window.setTimeout(function() {
-      hljs.initHighlighting();
-   }, 0);
+if (window.hljs) {
+  hljs.configure({languages: []});
+  hljs.initHighlightingOnLoad();
+  if (document.readyState && document.readyState === "complete") {
+    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
+  }
 }
 </script>
 
@@ -223,8 +225,8 @@ $(document).ready(function () {
 </div>
 <div id="contact-us" class="section level3">
 <h3>Contact us</h3>
-<p>You have any comments or questions, want to speak at an event or have anything else to say to us? Let us know!</p>
-<form action="https://formspree.io/heidi.bold@gmail.com" method="POST">
+<p>We are always looking for speakers, sponsors and venues. If you are interested let us know! We are also happy to answer to general questions and feedback.</p>
+<form action="https://formspree.io/zurich.r.user.meetup@gmail.com" method="POST">
 <p>
 <input type="text" name="name" placeholder="Your name">
 </p>
@@ -235,7 +237,7 @@ $(document).ready(function () {
 <textarea name="message" placeholder="Your message">
 </textarea>
 </p>
-<input type="submit" value="Send"> <input type="hidden" name="_cc" value="murielburi@bluewin.ch,christoph.molnar@gmail.com" />
+<input type="submit" value="Send"> <input type="hidden" name="_cc" value="jbracher@outlook.de" />
 </form>
 </div>
 
@@ -262,7 +264,7 @@ $(document).ready(function () {
   (function () {
     var script = document.createElement("script");
     script.type = "text/javascript";
-    script.src  = "https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
     document.getElementsByTagName("head")[0].appendChild(script);
   })();
 </script>

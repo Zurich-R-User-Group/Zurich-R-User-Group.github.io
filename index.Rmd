@@ -24,13 +24,13 @@ See the upcoming events on [meetup.com](http://www.meetup.com/Zurich-R-User-Grou
 ----
 
 ### Contact us
-You have any comments or questions, want to speak at an event or have
-anything else to say to us? Let us know! 
+We are always looking for speakers, sponsors and venues. If you are interested let us know!
+We are also happy to answer to general questions and feedback.
 
-<form action="https://formspree.io/heidi.bold@gmail.com" method="POST">
+<form action="https://formspree.io/zurich.r.user.meetup@gmail.com" method="POST">
 <p><input type="text" name="name" placeholder="Your name"></p>
 <p><input type="email" name="_replyto" placeholder="Your email"></p>   
 <p><textarea name="message" placeholder="Your message"></textarea></p>
 <input type="submit" value="Send">
-<input type="hidden" name="_cc" value="murielburi@bluewin.ch,christoph.molnar@gmail.com" />
+<input type="hidden" name="_cc" value="jbracher@outlook.de" />
 </form> 
