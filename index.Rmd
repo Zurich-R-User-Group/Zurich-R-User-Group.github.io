@@ -2,7 +2,7 @@
 title: "Zurich R User Group"
 ---
 
-<img src="https://raw.githubusercontent.com/Zurich-R-User-Group/Zurich-R-User-Group.github.io/master/_files/plot_logo.png" width="350">
+<img src="https://raw.githubusercontent.com/Zurich-R-User-Group/Zurich-R-User-Group.github.io/master/_files/Logo_Zurich_R_User_Group.png" width="350">
 
 Welcome to the website of the Zurich R User Group.
 We will try to gather information about our [meetups](http://www.meetup.com/Zurich-R-User-Group/) here.
