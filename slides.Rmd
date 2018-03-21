@@ -6,9 +6,9 @@ Here you can find slides from past meetups.
 
 ### March 21, 2018
 
-- [Long Term Protection Model]() (Alexis Iglauer, Partner Re, and Maarten-Jan Kallen, BeDataDriven, on behalf of Dr. Urszula Gasser, Partner Re)
+- Long Term Protection Model (Alexis Iglauer, Partner Re, and Maarten-Jan Kallen, BeDataDriven, on behalf of Dr. Urszula Gasser, Partner Re)
 
-- [Social contact network analysis](): static versus dynamic (time-stamped) approaches (Beatriz Vidondo, Veterinary Public Health Institute, Department of Clinical Research and Public Health, University of Bern)
+- Social contact network analysis: static versus dynamic (time-stamped) approaches (Beatriz Vidondo, Veterinary Public Health Institute, Department of Clinical Research and Public Health, University of Bern)
 
 ### January 8, 2018
 
