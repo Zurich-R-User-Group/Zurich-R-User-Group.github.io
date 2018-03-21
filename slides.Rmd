@@ -4,7 +4,13 @@ title: "Slides"
 
 Here you can find slides from past meetups.
 
-### January 8, 2017
+### March 21, 2018
+
+- [Long Term Protection Model]() (Alexis Iglauer, Partner Re, and Maarten-Jan Kallen, BeDataDriven BV, on behalf of Dr. Urszula Gasser, Partner Re)
+
+- [Social contact network analysis](): static versus dynamic (time-stamped) approaches (Beatriz Vidondo, Veterinary Public Health Institute, Department of Clinical Research and Public Health, University of Bern)
+
+### January 8, 2018
 
 - [Big Data Analytics in R using sparklyr](https://www.slideshare.net/NicolaLambiase/big-data-analytics-in-r-using-sparklyr), also available as [Rmd](https://gist.github.com/lambiase/f07ba853618a9219137fee0764671c94#file-nyc_tlc-rmd) and [html](https://cdn.rawgit.com/lambiase/f07ba853618a9219137fee0764671c94/raw/4f65642e012704f087a93e337ee10b486d53e544/nyc_tlc.html) files (Nicola Lambiase, Mirai-Solutions)
 - [Anomaly detection – database integrated](https://www.slideshare.net/Zurich_R_User_Group/anomaly-detection-database-integrated) (Olaf Nimz, Trivadis)
