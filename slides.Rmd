@@ -4,26 +4,46 @@ title: "Slides"
 
 Here you can find slides from past meetups.
 
-### January 8, 2017
+### March 21, 2018
 
-- [Big Data Analytics in R using sparklyr](https://www.slideshare.net/NicolaLambiase/big-data-analytics-in-r-using-sparklyr), also available as [Rmd](https://gist.github.com/lambiase/f07ba853618a9219137fee0764671c94#file-nyc_tlc-rmd) and [html](https://cdn.rawgit.com/lambiase/f07ba853618a9219137fee0764671c94/raw/4f65642e012704f087a93e337ee10b486d53e544/nyc_tlc.html) files (Nicola Lambiase, Mirai-Solutions)
+- Long Term Protection Model (Alexis Iglauer, Partner Re, and Maarten-Jan Kallen, BeDataDriven, on behalf of Dr. Urszula Gasser, Partner Re)
+
+- Social contact network analysis: static versus dynamic (time-stamped) approaches (Beatriz Vidondo, Veterinary Public Health Institute, Department of Clinical Research and Public Health, University of Bern)
+
+### January 8, 2018
+
+- [Big Data Analytics in R using sparklyr](https://www.slideshare.net/NicolaLambiase/big-data-analytics-in-r-using-sparklyr) (Nicola Lambiase, Mirai-Solutions)
+    - also available as [Rmd](https://gist.github.com/lambiase/f07ba853618a9219137fee0764671c94#file-nyc_tlc-rmd) and [html](https://cdn.rawgit.com/lambiase/f07ba853618a9219137fee0764671c94/raw/4f65642e012704f087a93e337ee10b486d53e544/nyc_tlc.html) files
+
 - [Anomaly detection – database integrated](https://www.slideshare.net/Zurich_R_User_Group/anomaly-detection-database-integrated) (Olaf Nimz, Trivadis)
 
 ### November 7, 2017
 
-- Find all slides [here](https://statistikzh.github.io/RMeetup/) (provided by the [Statistical Office of the Canton of Zurich](http://statistik.zh.ch/))
+- [Read and process unstructured data with R](https://github.com/statistikZH/RMeetup/blob/master/unstructered_data.pdf) (Max Grütter, Statistical Office ZH)
+
+- [Mastering Corporate Design with R](https://schnllr.github.io/Meetup) (Andrea Schnell and Thomas Lo Russo, Statistical Office)
+
+- [Illustration of pupils’ diversity with R](http://prezi.com/ao48t6yeh_vz/?utm_campaign=share&utm_medium=copy&rc=ex0share) (Flavian Imlig, Zurich State Department of Education)
+
+- [Making Public Data Public](http://www.christophsax.com/slides/171107-meetup/slides.html) (Christoph Sax, Christoph Sax Data Analytics)
+
+See also the [list of presentations](https://statistikzh.github.io/RMeetup/) provided by the [Statistical Office of the Canton of Zurich](http://statistik.zh.ch/).
 
 ### September 4, 2017
 
 - Open machine learning (Heidi Seibold, Epidemiology, Biostatistics and Prevention Institute, UZH)
+
 - [Dynamic Pricing - Analyzing rapidly-changing prices](https://docs.datahouse.ch/2017/RMeetup_September) (Daniel Meister, datahouse)
+
 - [R at Sanitas – Workflow, Problems and
 Solutions](https://www.slideshare.net/Zurich_R_User_Group/r-at-sanitas-workflow-problems-and-solutions) (Patrik Lengacher, Sanitas)
 
 ### May 3, 2017
 
 - [Visualizing the frequency of delays using QGIS and the Leaflet javascript library in R](https://www.slideshare.net/Zurich_R_User_Group/visualizing-the-frequency-of-transit-delays-using-qgis-and-the-leaflet-javascript-library-in-r) (Peter B. Pearman and Thomas Roth)
+
 - [Modelling Bus Bunching](https://www.slideshare.net/Zurich_R_User_Group/modeling-bus-bunching) (Andrea Farnham)
+
 - How we organized the Hackathon (Heidi Seibold)
 
 ### April 10, 2017
@@ -32,44 +52,68 @@ Solutions](https://www.slideshare.net/Zurich_R_User_Group/r-at-sanitas-workflow-
 
 ### February 6, 2017
 - [Introduction to Renjin, the alternative engine for R ](https://www.slideshare.net/Zurich_R_User_Group/introduction-to-renjin-the-alternative-engine-for-r) (Maarten-Jan Kallen, BeDataDriven)
+
 - [R, y u do dis? ](https://github.com/christophM/r-y-u-do-dis/blob/master/presentation.Rmd) (Christoph Molnar)
+
 - Scraping Interactive Graphs with Selenium (Kushtrim Veseli, Swiss International Air Lines) ([Code](https://github.com/Zurich-R-User-Group/Zurich-R-User-Group.github.io/blob/master/_files/slides-code/538_polls_all.R))
 
 
 ### November 29, 2016 (How R is used in different professions)
+
 - Make it simpleR! (Raymond Zychowicz, UBS)  
+
 - [R in Finance: Using R in a productive and highly regulated environment](http://www.slideshare.net/Zurich_R_User_Group/rinfinancegabrielfoix) (Gabriel Foix, Mirai Solutions) 
+
 - [R for Car Insurance Product](http://www.slideshare.net/Zurich_R_User_Group/how-to-use-r-in-different-professions-r-for-car-insurance-product-speaker-claudio-giancaterino) (Claudio Giancaterino) 
+
 - Using Shiny for worldwide climate monitoring (David Masson, CelsiusPro)
 
 ### September 29, 2016
-- [Fast Prototyping in R - a brief Introduction to R Shiny](http://htmlpreview.github.io/?https://github.com/Zurich-R-User-Group/Zurich-R-User-Group.github.io/blob/master/_files/slides/nadja-shiny/MeetupPresentation.html#/) (Nadja Ulrich, Zühlke)     [Code](https://github.com/naulrich/ZurichRUserMeetup)
+
+- [Fast Prototyping in R - a brief Introduction to R Shiny](http://htmlpreview.github.io/?https://github.com/Zurich-R-User-Group/Zurich-R-User-Group.github.io/blob/master/_files/slides/nadja-shiny/MeetupPresentation.html#/) (Nadja Ulrich, Zühlke) [Code](https://github.com/naulrich/ZurichRUserMeetup)
+
 - [Clean, code, analyze and visualize election data in R: An example from datajournalism](http://www.slideshare.net/Zurich_R_User_Group/where-south-america-is-swinging-to-the-right-an-rdriven-data-journalism-project-from-neue-zrcher-zeitung) (Marie-José Kolly & Marvin Milatz, NZZ)
 
 
 ### August 4, 2016 (Visualisation special)
+
 - [Analyzing the Bührer family data set using an advanced mosaic plot.](http://de.slideshare.net/Zurich_R_User_Group/analyzing-the-bhrer-family-data-set-using-an-advanced-mosaic-plot) (Thomas Roth, ZHAW)
+
 - [Mapping health during travel: a visualization of a trip through Thailand.](http://de.slideshare.net/Zurich_R_User_Group/visualization-challenge-mapping-health-during-travel) (Andrea Farnham, UZH)
+
 - [Interactive Javascript in R with rCharts](http://htmlpreview.github.io/?https://raw.githubusercontent.com/Zurich-R-User-Group/Zurich-R-User-Group.github.io/master/_files/slides/matteo-rcharts/index.html) (Matteo Casserini, Centralway)
+
 - [Animation of political shifts in elections](https://github.com/srfdata/2015-09-elections-political-shifts/blob/master/analysis/main.Rmd) (Timo Grossenbacher, SRF)
+
 - [An interactive map with R-Shiny and leaflet](http://de.slideshare.net/Zurich_R_User_Group/an-interactive-map-with-rshiny-and-leaflet) (Bojan Škerlak, Migros)
+
 - [Federal election 2015 : visualizing the panachage-statistics](http://www.web.statistik.zh.ch/cms_vis/meetup/panachage.html) (Thomas Lo Russo, Statistical Office Zurich)
+
 - [Crosstalk](https://raw.githubusercontent.com/dimitris1ps/zurichRMeetup/master/meetup.rmd) (Dimitris Psaradellis, eBay)
 
 
 ### May 23, 2016
+
 - [Microsoft R Server](http://chilp.it/e690a33) (Marc Schöni, Microsoft)
+
 - [Automated reports at OrganizationView](http://www.slideshare.net/AndrewMarritt/zurich-r-user-group-presentation-may-2016) (Andrew Marritt, OrganizationView)
 
 ### March 16, 2016
+
 - [Data journalism](http://grssnbchr.github.io/zrug-rddj) (Timo Grossenbacher, SRF)
+
 - [Open Data Zurich](http://de.slideshare.net/Opendatazurich/open-data-lt3-r) (Marco Sieber and Fidel Thomet, Open Data Zurich)
 
 ### January 21, 2016
+
 - [Speeding up (big) data manipulation with the data.table package](http://de.slideshare.net/Zurich_R_User_Group/speeding-up-big-data-manipulation-with-datatable-package) (Vasily Tolkachev, Zurich University of Applied Sciences, Institute for Data Analysis and Process Design)
+
 - [DescTools - Tools for Descriptive Statistics and Exploratory Data Analysis](http://de.slideshare.net/Zurich_R_User_Group/zurich-r-user-group-desc-tools) (Andri Signorell, Helsana/HWZ)  
 
 ### December 7, 2015
+
 - [Shiny: Make Your R Code Interactive](http://de.slideshare.net/Zurich_R_User_Group/december-2015-meetup-shiny-make-your-r-code-interactive-craig-wang) (Craig Wang, ETH)
+
 - Exploring knitr (Isaac Gravestock, UZH)
+
 - [Improving computational performance with algorithm engineering](https://github.com/krlmlr-useR15/krlmlr-useR15.github.io/tree/master/_presentation) (Kirill Müller, ETH)
