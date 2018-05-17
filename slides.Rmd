@@ -121,4 +121,4 @@ Solutions](https://www.slideshare.net/Zurich_R_User_Group/r-at-sanitas-workflow-
 
 - Exploring knitr (Isaac Gravestock, UZH)
 
-- [Improving computational performance with algorithm engineering](https://github.com/krlmlr-useR15/krlmlr-useR15.github.io/tree/master/_presentation) (Kirill Müller, ETH)
+- [Improving computational performance with algorithm engineering](https://krlmlr-user15.github.io/presentation/#1) (Kirill Müller, ETH)
