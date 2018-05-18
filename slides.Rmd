@@ -6,7 +6,7 @@ Here you can find slides from past meetups.
 
 ### May 16, 2018
 
-- Micro location rating in real estate (Jacqueline Schweizer, Wüest Partner)
+- [Micro location rating in real estate](slides/Pres_Schweizer_2018_05_16.pdf) (Jacqueline Schweizer, Wüest Partner)
 - [Speeding R up on your computer by parallelized computations - a geostatistical case study](slides/Pres_Papritz_2018_05_16.pdf) (Andreas Papritz, Department of Environmental Systems Science, ETH Zurich / Statistik Stadt Zürich)
 
 ### March 21, 2018
