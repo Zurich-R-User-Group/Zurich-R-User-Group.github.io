@@ -4,6 +4,11 @@ title: "Slides"
 
 Here you can find slides from past meetups.
 
+### September 3, 2018
+
+- blogdown: Creating Websites with R Markdown (Thomas Lo Russo, Statistical Office, Canton of Zurich)
+- DBI: Recent developments in R's database interface (Kirill Müller, cynkra GmbH)
+
 ### May 16, 2018
 
 - [Micro location rating in real estate](slides/Pres_Schweizer_2018_05_16.pdf) (Jacqueline Schweizer, Wüest Partner)
@@ -24,9 +29,9 @@ Here you can find slides from past meetups.
 
 ### November 7, 2017
 
-- [Read and process unstructured data with R](https://github.com/statistikZH/RMeetup/blob/master/unstructered_data.pdf) (Max Grütter, Statistical Office ZH)
+- [Read and process unstructured data with R](https://github.com/statistikZH/RMeetup/blob/master/unstructered_data.pdf) (Max Grütter, Statistical Office, Canton of Zurich)
 
-- [Mastering Corporate Design with R](https://schnllr.github.io/Meetup) (Andrea Schnell and Thomas Lo Russo, Statistical Office)
+- [Mastering Corporate Design with R](https://schnllr.github.io/Meetup) (Andrea Schnell and Thomas Lo Russo, Statistical Office, Canton of Zurich)
 
 - [Illustration of pupils’ diversity with R](http://prezi.com/ao48t6yeh_vz/?utm_campaign=share&utm_medium=copy&rc=ex0share) (Flavian Imlig, Zurich State Department of Education)
 
