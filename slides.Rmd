@@ -4,6 +4,11 @@ title: "Slides"
 
 Here you can find slides from past meetups.
 
+### October 25, 2018
+
+- A Comparison of Covariate-based Prediction Methods for FIFA World Cups (Prof. Andreas Groll, TU Dortmund)
+- Predicting biathlon shooting performance using machine learning (Thomas Maier, Swiss Federal Institute of Sport Magglingen/Datahouse)
+
 ### September 3, 2018
 
 - [blogdown: Creating Websites with R Markdown](slides/blogdown_rmeetup_tlorusso.pdf) (Thomas Lo Russo, Statistical Office, Canton of Zurich)
