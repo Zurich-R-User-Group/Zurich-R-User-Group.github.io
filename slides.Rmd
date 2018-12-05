@@ -4,6 +4,10 @@ title: "Slides"
 
 Here you can find slides from past meetups.
 
+### December 5, 2018
+
+- [What I find important when R Programming - and Recent Cool Features in R](https://stat.ethz.ch/~maechler/U/R/Zurich_R-2018_ProgR-ALTREP.html#1) (Dr. Martin Mächler, ETH Zurich)
+
 ### October 25, 2018
 
 - A Comparison of Covariate-based Prediction Methods for FIFA World Cups (Prof. Andreas Groll, TU Dortmund)
