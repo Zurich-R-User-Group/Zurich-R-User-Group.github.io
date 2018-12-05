@@ -10,8 +10,8 @@ Here you can find slides from past meetups.
 
 ### October 25, 2018
 
-- A Comparison of Covariate-based Prediction Methods for FIFA World Cups (Prof. Andreas Groll, TU Dortmund)
-- Predicting biathlon shooting performance using machine learning (Thomas Maier, Swiss Federal Institute of Sport Magglingen/Datahouse)
+- [A Comparison of Covariate-based Prediction Methods for FIFA World Cups](slides/20181025_useR_predicting_FIFA_groll.pdf) (Prof. Andreas Groll, TU Dortmund)
+- [Predicting biathlon shooting performance using machine learning](slides/20181025_useR_predicting_biathlon_maier.pdf) (Thomas Maier, Swiss Federal Institute of Sport Magglingen/Datahouse)
 
 ### September 3, 2018
 
