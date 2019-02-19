@@ -5,7 +5,7 @@ title: "Who we are"
 We are R Users from in and around Zurich. We hold Meetups, which you can see 
 [here](http://www.meetup.com/Zurich-R-User-Group/).
 
-Currently [Dorothea Hug Peter, Muriel Buri, Andrea Schnell, Kirill Müller and Johannes Bracher](http://www.meetup.com/Zurich-R-User-Group/members/?op=leaders) 
+Currently [Dorothea Hug Peter, Muriel Buri, Andrea Schnell, Kirill Müller, Johannes Bracher and Rachel Heyard](http://www.meetup.com/Zurich-R-User-Group/members/?op=leaders) 
 are the organisers.
 
 The source code for the website can be found [here](https://github.com/Zurich-R-User-Group/Zurich-R-User-Group.github.io). 
