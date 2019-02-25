@@ -4,6 +4,11 @@ title: "Slides"
 
 Here you can find slides from past meetups.
 
+### February 19, 2018
+
+- [On weapons and dialects: The initial hypothesis and the final story](slides/20190219_talkMJK.pdf) (Marie-José Kolly, NZZ)
+- [Data driven journalism at Tamedia](https://docs.google.com/presentation/d/1wWc-yjw33mIA8SrOQd16OoIID54L0wU5mNV4410RxKk) (Patrick Meier, Tamedia)
+
 ### December 5, 2018
 
 - [What I find important when R Programming - and Recent Cool Features in R](https://stat.ethz.ch/~maechler/U/R/Zurich_R-2018_ProgR-ALTREP.html#1) (Dr. Martin Mächler, ETH Zurich)

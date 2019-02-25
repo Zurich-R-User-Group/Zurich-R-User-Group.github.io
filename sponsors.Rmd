@@ -9,6 +9,7 @@ For our events we are always looking for sponsors and venues. If you would like 
 - [Impact Hub Zurich](https://zurich.impacthub.ch/)
 - [Microsoft](https://www.microsoft.com/en-us/)
 - [Mirai Solutions](http://www.mirai-solutions.ch/)
+- [Neue Zürcher Zeitung](https://www.nzz.ch/)
 - [PartnerRe](https://partnerre.com/)
 - [R Consortium](https://www.r-consortium.org/projects/r-user-group-support-program)
 - [RStudio](https://www.rstudio.com/)
