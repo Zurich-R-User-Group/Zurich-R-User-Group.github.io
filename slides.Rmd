@@ -4,6 +4,11 @@ title: "Slides"
 
 Here you can find slides from past meetups.
 
+### April 03, 2019
+
+- Medical underwriting triage: An end-to-end machine learning case study" (Alexander Noll, PartnerRe)
+- [Introducing chartbookR](slides/Reber_chartbookR.pdf) (Kilian Reber, SUVA)
+
 ### February 19, 2018
 
 - [On weapons and dialects: The initial hypothesis and the final story](slides/20190219_talkMJK.pdf) (Marie-José Kolly, NZZ)
