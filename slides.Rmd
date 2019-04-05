@@ -6,7 +6,7 @@ Here you can find slides from past meetups.
 
 ### April 03, 2019
 
-- Medical underwriting triage: An end-to-end machine learning case study" (Alexander Noll, PartnerRe)
+- Medical underwriting triage: An end-to-end machine learning case study (Alexander Noll, PartnerRe)
 - [Introducing chartbookR](slides/Reber_chartbookR.pdf) (Kilian Reber, SUVA)
 
 ### February 19, 2018
