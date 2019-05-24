@@ -4,6 +4,11 @@ title: "Slides"
 
 Here you can find slides from past meetups.
 
+### May 22, 2019
+
+- Docker for R users (Lynda Metref, Helbling Technik AG)
+- [Toward production-ready user interfaces with the R Shiny framework](https://rinterface.com/shiny/talks/index.html)
+
 ### April 03, 2019
 
 - Medical underwriting triage: An end-to-end machine learning case study (Alexander Noll, PartnerRe)
