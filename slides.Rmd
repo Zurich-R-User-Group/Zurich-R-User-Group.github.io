@@ -1,8 +1,16 @@
 ---
 title: "Slides"
+output:
+  html_document:
+    df_print: paged
 ---
 
 Here you can find slides from past meetups.
+
+### June 18, 2019
+
+- [Use case of reinforcement-learning examplified by Super Mario AI](slides/20190618_reinforcelearn.pdf) (Sebastian Heinz \& Oliver Guggenbühl, STATWORX")
+- [Analytical Data Management with R](slides/20190618_duckdb.pdf) (Hannes Mühleisen, University of Amsterdam (UvA))
 
 ### May 22, 2019
 
@@ -12,7 +20,7 @@ Here you can find slides from past meetups.
 ### April 03, 2019
 
 - Medical underwriting triage: An end-to-end machine learning case study (Alexander Noll, PartnerRe)
-- [Introducing chartbookR](slides/Reber_chartbookR.pdf) (Kilian Reber, SUVA)
+- [Introducing chartbookR](slides/20190403_Reber_chartbookR.pdf) (Kilian Reber, SUVA)
 
 ### February 19, 2018
 
@@ -25,22 +33,22 @@ Here you can find slides from past meetups.
 
 ### October 25, 2018
 
-- [A Comparison of Covariate-based Prediction Methods for FIFA World Cups](slides/20181025_useR_predicting_FIFA_groll.pdf) (Prof. Andreas Groll, TU Dortmund)
+- [A Comparison of Covariate-based Prediction Methods for FIFA World Cups](slides/20181025_useR_predicting_FIFA_groll.pdf) (Andreas Groll, TU Dortmund)
 - [Predicting biathlon shooting performance using machine learning](slides/20181025_useR_predicting_biathlon_maier.pdf) (Thomas Maier, Swiss Federal Institute of Sport Magglingen/Datahouse)
 
 ### September 3, 2018
 
-- [blogdown: Creating Websites with R Markdown](slides/blogdown_rmeetup_tlorusso.pdf) (Thomas Lo Russo, Statistical Office, Canton of Zurich)
+- [blogdown: Creating Websites with R Markdown](slides/20180903_blogdown_rmeetup_tlorusso.pdf) (Thomas Lo Russo, Statistical Office, Canton of Zurich)
 - [DBI: Recent developments in R's database interface](https://krlmlr.github.io/dbi-slides/2018-09-zurich-meetup/) (Kirill Müller, cynkra GmbH)
 
 ### May 16, 2018
 
-- [Micro location rating in real estate](slides/Pres_Schweizer_2018_05_16.pdf) (Jacqueline Schweizer, Wüest Partner)
-- [Speeding R up on your computer by parallelized computations - a geostatistical case study](slides/Pres_Papritz_2018_05_16.pdf) (Andreas Papritz, Department of Environmental Systems Science, ETH Zurich / Statistik Stadt Zürich)
+- [Micro location rating in real estate](slides/20180516_Pres_Schweizer.pdf) (Jacqueline Schweizer, Wüest Partner)
+- [Speeding R up on your computer by parallelized computations - a geostatistical case study](slides/20180516_Pres_Papritz.pdf) (Andreas Papritz, Department of Environmental Systems Science, ETH Zurich / Statistik Stadt Zürich)
 
 ### March 21, 2018
 
-- [Long Term Protection Model](slides/LTPM-in-R.pdf) (Alexis Iglauer, Partner Re, and Maarten-Jan Kallen, BeDataDriven, on behalf of Dr. Urszula Gasser, Partner Re)
+- [Long Term Protection Model](slides/20180321_LTPM-in-R.pdf) (Alexis Iglauer, Partner Re, and Maarten-Jan Kallen, BeDataDriven, on behalf of Dr. Urszula Gasser, Partner Re)
 
 - Social contact network analysis: static versus dynamic (time-stamped) approaches (Beatriz Vidondo, Veterinary Public Health Institute, Department of Clinical Research and Public Health, University of Bern)
 
