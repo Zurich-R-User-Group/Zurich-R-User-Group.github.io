@@ -7,6 +7,11 @@ output:
 
 Here you can find slides from past meetups.
 
+### September 16, 2019
+
+- [Relational data models with the db package](https://github.com/krlmlr/dm/blob/master/demo/zurich.R) (https://krlmlr.github.io/dm, Kirill Müller, Cynkra)
+- [Tracking Real Estate Project Web Sites with R](20190916_Pres_Datahouse_Crawling.pdf) (Thomas Maier, Datahouse AG)
+
 ### June 18, 2019
 
 - [Use case of reinforcement-learning examplified by Super Mario AI](slides/20190618_reinforcelearn.pdf) (Sebastian Heinz \& Oliver Guggenbühl, STATWORX")

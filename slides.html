@@ -7,6 +7,7 @@
 <meta charset="utf-8" />
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
 
 
 
@@ -86,7 +87,6 @@ code {
 }
 img {
   max-width:100%;
-  height: auto;
 }
 .tabbed-pane {
   padding-top: 12px;
@@ -247,18 +247,6 @@ $(document).ready(function () {
 }
 </style>
 
-<script>
-$(document).ready(function () {
-  window.buildTabsets("TOC");
-});
-
-$(document).ready(function () {
-  $('.tabset-dropdown > .nav-tabs > li').click(function () {
-    $(this).parent().toggleClass('nav-tabs-open')
-  });
-});
-</script>
-
 <!-- code folding -->
 
 
@@ -324,10 +312,17 @@ $(document).ready(function () {
 
 
 <p>Here you can find slides from past meetups.</p>
+<div id="september-16-2019" class="section level3">
+<h3>September 16, 2019</h3>
+<ul>
+<li><a href="https://github.com/krlmlr/dm/blob/master/demo/zurich.R">Relational data models with the db package</a> (<a href="https://krlmlr.github.io/dm" class="uri">https://krlmlr.github.io/dm</a>, Kirill Müller, Cynkra)</li>
+<li><a href="20190916_Pres_Datahouse_Crawling.pdf">Tracking Real Estate Project Web Sites with R</a> (Thomas Maier, Datahouse AG)</li>
+</ul>
+</div>
 <div id="june-18-2019" class="section level3">
 <h3>June 18, 2019</h3>
 <ul>
-<li><a href="slides/20190618_reinforcelearn.pdf">Use case of reinforcement-learning examplified by Super Mario AI</a> (Sebastian Heinz &amp; Oliver Guggenbühl, STATWORX“)</li>
+<li><a href="slides/20190618_reinforcelearn.pdf">Use case of reinforcement-learning examplified by Super Mario AI</a> (Sebastian Heinz &amp; Oliver Guggenbühl, STATWORX&quot;)</li>
 <li><a href="slides/20190618_duckdb.pdf">Analytical Data Management with R</a> (Hannes Mühleisen, CWI, University of Amsterdam (UvA))</li>
 </ul>
 </div>
@@ -511,6 +506,23 @@ $(document).ready(function () {
 
 
 </script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open')
+  });
+});
+</script>
+
+<!-- code folding -->
+
 
 <!-- dynamically load mathjax for compatibility with self-contained -->
 <script>
