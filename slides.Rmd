@@ -9,7 +9,7 @@ Here you can find slides from past meetups.
 
 ### September 16, 2019
 
-- [Relational data models with the db package](https://github.com/krlmlr/dm/blob/master/demo/zurich.R) (https://krlmlr.github.io/dm, Kirill Müller, Cynkra)
+- Relational data models with the dm package (Kirill Müller, cynkra) [R script](https://github.com/krlmlr/dm/blob/master/demo/zurich.R), [package website](https://krlmlr.github.io/dm/)
 - [Tracking Real Estate Project Web Sites with R](20190916_Pres_Datahouse_Crawling.pdf) (Thomas Maier, Datahouse AG)
 
 ### June 18, 2019
@@ -39,7 +39,7 @@ Here you can find slides from past meetups.
 ### October 25, 2018
 
 - [A Comparison of Covariate-based Prediction Methods for FIFA World Cups](slides/20181025_useR_predicting_FIFA_groll.pdf) (Andreas Groll, TU Dortmund)
-- [Predicting biathlon shooting performance using machine learning](slides/20181025_useR_predicting_biathlon_maier.pdf) (Thomas Maier, Swiss Federal Institute of Sport Magglingen/Datahouse)
+- [Predicting biathlon shooting performance using machine learning](slides/20181025_useR_predicting_biathlon_maier.pdf) (Thomas Maier, Swiss Federal Institute of Sport Magglingen/datahouse)
 
 ### September 3, 2018
 

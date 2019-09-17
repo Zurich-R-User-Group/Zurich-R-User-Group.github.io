@@ -4,8 +4,10 @@ title: "Sponsors and venues"
 
 For our events we are always looking for sponsors and venues. If you would like to organize an event with us please [get in touch](index.html). In the past we have received support from the following companies and organizations:
 
+- [cynkra](https://www.cynkra.com/)
 - [datahouse](https://www.datahouse.ch/)
 - [eBay](http://www.ebay.ch/)
+- [Helbling Group](https://www.helbling.ch/)
 - [Impact Hub Zurich](https://zurich.impacthub.ch/)
 - [Microsoft](https://www.microsoft.com/en-us/)
 - [Mirai Solutions](http://www.mirai-solutions.ch/)
