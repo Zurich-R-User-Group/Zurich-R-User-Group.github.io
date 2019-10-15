@@ -7,6 +7,11 @@ output:
 
 Here you can find slides from past meetups.
 
+### October 14, 2019
+
+- [quanteda - Quantitative Analysis of Textual Data](slides/20191014_quanteda.pdf) (Stefan Müller, UZH)
+- useR!2019 Toulouse : ZRH-PARIS-BORDEAUX-TOULOUSE (Matthias Bannert, KOF/ETHZ)
+
 ### September 16, 2019
 
 - Relational data models with the dm package: [R script](https://github.com/krlmlr/dm/blob/master/demo/zurich.R), [package website](https://krlmlr.github.io/dm/) (Kirill Müller, cynkra)
@@ -14,7 +19,7 @@ Here you can find slides from past meetups.
 
 ### June 18, 2019
 
-- [Use case of reinforcement-learning examplified by Super Mario AI](slides/20190618_reinforcelearn.pdf) (Sebastian Heinz \& Oliver Guggenbühl, STATWORX")
+- [Use case of reinforcement-learning examplified by Super Mario AI](slides/20190618_reinforcelearn.pdf) (Sebastian Heinz \& Oliver Guggenbühl, STATWORX)
 - [Analytical Data Management with R](slides/20190618_duckdb.pdf) (Hannes Mühleisen, CWI, University of Amsterdam (UvA))
 
 ### May 22, 2019
