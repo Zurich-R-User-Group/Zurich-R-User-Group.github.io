@@ -32,7 +32,7 @@ Here you can find slides from past meetups.
 - Medical underwriting triage: An end-to-end machine learning case study (Alexander Noll, PartnerRe)
 - [Introducing chartbookR](slides/20190403_Reber_chartbookR.pdf) (Kilian Reber, SUVA)
 
-### February 19, 2018
+### February 19, 2019
 
 - [On weapons and dialects: The initial hypothesis and the final story](slides/20190219_talkMJK.pdf) (Marie-José Kolly, NZZ)
 - [Data driven journalism at Tamedia](https://docs.google.com/presentation/d/1wWc-yjw33mIA8SrOQd16OoIID54L0wU5mNV4410RxKk) (Patrick Meier, Tamedia)
