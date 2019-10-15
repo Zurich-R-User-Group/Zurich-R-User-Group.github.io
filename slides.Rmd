@@ -10,7 +10,7 @@ Here you can find slides from past meetups.
 ### October 14, 2019
 
 - [quanteda - Quantitative Analysis of Textual Data](slides/20191014_quanteda.pdf) (Stefan Müller, UZH)
-- useR!2019 Toulouse : ZRH-PARIS-BORDEAUX-TOULOUSE (Matthias Bannert, KOF/ETHZ)
+- [useR!2019 Toulouse : ZRH-PARIS-BORDEAUX-TOULOUSE](https://zhr-meetup-201910.netlify.com/#1) (Matthias Bannert, KOF/ETHZ)
 
 ### September 16, 2019
 
