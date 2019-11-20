@@ -7,6 +7,11 @@ output:
 
 Here you can find slides from past meetups.
 
+### November 13
+
+- [Predicting the departing runway of a flight based on a classification tree model](slides/20191113_Perucco.pdf) (Benjamin Perucco, Zurich Airport)
+- NOTAM message classifier (Joao Banha, Swiss International Air Lines)
+
 ### October 14, 2019
 
 - [quanteda - Quantitative Analysis of Textual Data](slides/20191014_quanteda.pdf) (Stefan Müller, UZH)
