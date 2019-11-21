@@ -10,7 +10,7 @@ Here you can find slides from past meetups.
 ### November 13
 
 - [Predicting the departing runway of a flight based on a classification tree model](slides/20191113_Perucco.pdf) (Benjamin Perucco, Zurich Airport)
-- NOTAM message classifier (Joao Banha, Swiss International Air Lines)
+- [NOTAM message classifier](slides/20191113_Banha.pdf) (Joao Banha, Swiss International Air Lines)
 
 ### October 14, 2019
 
