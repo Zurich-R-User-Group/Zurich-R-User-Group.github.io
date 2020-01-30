@@ -9,7 +9,7 @@ Here you can find slides from past meetups.
 
 ### January 29, 2020
 
-- From survival analysis to projecting disability payments (Benjamin Abt and Simon Adamov, PartnerRe)
+- [From survival analysis to projecting disability payments](slides/20200129_PartnerRe/index.html) (Benjamin Abt and Simon Adamov, PartnerRe)
 - Data Science at UPC (Felix Reisen, UPC)
 - [shinyMobile: mobile ready shiny apps](https://rinterface.com/shiny/talks/zurichR2020/index.html#slide=1) (David Granjon, Novartis)
 
