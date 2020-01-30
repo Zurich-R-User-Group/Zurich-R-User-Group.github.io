@@ -7,7 +7,13 @@ output:
 
 Here you can find slides from past meetups.
 
-### November 13
+### January 29, 2020
+
+- From survival analysis to projecting disability payments (Benjamin Abt and Simon Adamov, PartnerRe)
+- Data Science at UPC (Felix Reisen, UPC)
+- [shinyMobile: mobile ready shiny apps](https://rinterface.com/shiny/talks/zurichR2020/index.html#slide=1) (David Granjon, Novartis)
+
+### November 13, 2019
 
 - [Predicting the departing runway of a flight based on a classification tree model](slides/20191113_Perucco.pdf) (Benjamin Perucco, Zurich Airport)
 - [NOTAM message classifier](slides/20191113_Banha.pdf) (Joao Banha, Swiss International Air Lines)
