@@ -7,6 +7,9 @@ output:
 
 Here you can find slides from past meetups.
 
+### October 29, 2020
+- [SPARQL with R](https://github.com/statistikZH/SPARQL_WITH_R) (Katharina Kaelin, Statistisches Amt, Kanton Zürich)
+
 ### January 29, 2020
 
 - [From survival analysis to projecting disability payments](slides/20200129_PartnerRe_pdfversion.pdf) (Benjamin Abt and Simon Adamov, PartnerRe)
