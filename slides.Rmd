@@ -7,6 +7,12 @@ output:
 
 Here you can find slides from past meetups.
 
+
+### November 2, 2023
+- [Unveiling Market Insights with Real Estate](slides/20231102_Thuerlimann.pdf) (Andreas Thürlimann, Datahouse)
+- [Interpretable machine learning: applications in public health](slides/20231102_Farnham.pdf) (Andrea Farnham, University of Zurich)
+
+
 ### October 29, 2020
 - [SPARQL with R](https://github.com/statistikZH/SPARQL_WITH_R) (Katharina Kaelin, Statistisches Amt, Kanton Zürich)
 

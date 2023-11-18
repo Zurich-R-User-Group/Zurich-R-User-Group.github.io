@@ -1,11 +1,10 @@
 <!DOCTYPE html>
 
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html>
 
 <head>
 
 <meta charset="utf-8" />
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="generator" content="pandoc" />
 <meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
 
@@ -14,12 +13,22 @@
 
 <title>Slides</title>
 
-<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<script src="site_libs/header-attrs-2.23/header-attrs.js"></script>
+<script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/cosmo.min.css" rel="stylesheet" />
 <script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<style>h1 {font-size: 34px;}
+       h1.title {font-size: 38px;}
+       h2 {font-size: 30px;}
+       h3 {font-size: 24px;}
+       h4 {font-size: 18px;}
+       h5 {font-size: 16px;}
+       h6 {font-size: 12px;}
+       code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
+       pre:not([class]) { background-color: white }</style>
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
 <link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
 <script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
@@ -27,12 +36,16 @@
 <script src="site_libs/pagedtable-1.1/js/pagedtable.js"></script>
 <link href="site_libs/ionicons-2.0.1/css/ionicons.min.css" rel="stylesheet" />
 
-<style type="text/css">code{white-space: pre;}</style>
 <style type="text/css">
-  pre:not([class]) {
-    background-color: white;
-  }
-</style>
+  code{white-space: pre-wrap;}
+  span.smallcaps{font-variant: small-caps;}
+  span.underline{text-decoration: underline;}
+  div.column{display: inline-block; vertical-align: top; width: 50%;}
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  ul.task-list{list-style: none;}
+    </style>
+
+<style type="text/css">code{white-space: pre;}</style>
 <script type="text/javascript">
 if (window.hljs) {
   hljs.configure({languages: []});
@@ -45,32 +58,8 @@ if (window.hljs) {
 
 
 
-<style type="text/css">
-h1 {
-  font-size: 34px;
-}
-h1.title {
-  font-size: 38px;
-}
-h2 {
-  font-size: 30px;
-}
-h3 {
-  font-size: 24px;
-}
-h4 {
-  font-size: 18px;
-}
-h5 {
-  font-size: 16px;
-}
-h6 {
-  font-size: 12px;
-}
-.table th:not([align]) {
-  text-align: left;
-}
-</style>
+
+
 
 
 
@@ -81,13 +70,8 @@ h6 {
   margin-left: auto;
   margin-right: auto;
 }
-code {
-  color: inherit;
-  background-color: rgba(0, 0, 0, 0.04);
-}
 img {
   max-width:100%;
-  height: auto;
 }
 .tabbed-pane {
   padding-top: 12px;
@@ -101,40 +85,16 @@ button.code-folding-btn:focus {
 summary {
   display: list-item;
 }
+details > summary > p:only-child {
+  display: inline;
+}
+pre code {
+  padding: 0;
+}
 </style>
 
 
 <style type="text/css">
-/* padding for bootstrap navbar */
-body {
-  padding-top: 51px;
-  padding-bottom: 40px;
-}
-/* offset scroll position for anchor links (for fixed navbar)  */
-.section h1 {
-  padding-top: 56px;
-  margin-top: -56px;
-}
-.section h2 {
-  padding-top: 56px;
-  margin-top: -56px;
-}
-.section h3 {
-  padding-top: 56px;
-  margin-top: -56px;
-}
-.section h4 {
-  padding-top: 56px;
-  margin-top: -56px;
-}
-.section h5 {
-  padding-top: 56px;
-  margin-top: -56px;
-}
-.section h6 {
-  padding-top: 56px;
-  margin-top: -56px;
-}
 .dropdown-submenu {
   position: relative;
 }
@@ -162,7 +122,7 @@ body {
   margin-right: -10px;
 }
 .dropdown-submenu:hover>a:after {
-  border-left-color: #ffffff;
+  border-left-color: #adb5bd;
 }
 .dropdown-submenu.pull-left {
   float: none;
@@ -174,7 +134,7 @@ body {
 }
 </style>
 
-<script>
+<script type="text/javascript">
 // manage active state of menu based on current page
 $(document).ready(function () {
   // active menu anchor
@@ -184,11 +144,28 @@ $(document).ready(function () {
     href = "index.html";
   var menuAnchor = $('a[href="' + href + '"]');
 
-  // mark it active
-  menuAnchor.parent().addClass('active');
+  // mark the anchor link active (and if it's in a dropdown, also mark that active)
+  var dropdown = menuAnchor.closest('li.dropdown');
+  if (window.bootstrap) { // Bootstrap 4+
+    menuAnchor.addClass('active');
+    dropdown.find('> .dropdown-toggle').addClass('active');
+  } else { // Bootstrap 3
+    menuAnchor.parent().addClass('active');
+    dropdown.addClass('active');
+  }
 
-  // if it's got a parent navbar menu mark it active as well
-  menuAnchor.closest('li.dropdown').addClass('active');
+  // Navbar adjustments
+  var navHeight = $(".navbar").first().height() + 15;
+  var style = document.createElement('style');
+  var pt = "padding-top: " + navHeight + "px; ";
+  var mt = "margin-top: -" + navHeight + "px; ";
+  var css = "";
+  // offset scroll position for anchor links (for fixed navbar)
+  for (var i = 1; i <= 6; i++) {
+    css += ".section h" + i + "{ " + pt + mt + "}\n";
+  }
+  style.innerHTML = "body {" + pt + "padding-bottom: 40px; }\n" + css;
+  document.head.appendChild(style);
 });
 </script>
 
@@ -200,13 +177,12 @@ $(document).ready(function () {
   max-height: 500px;
   min-height: 44px;
   overflow-y: auto;
-  background: white;
   border: 1px solid #ddd;
   border-radius: 4px;
 }
 
-.tabset-dropdown > .nav-tabs > li.active:before {
-  content: "";
+.tabset-dropdown > .nav-tabs > li.active:before, .tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "\e259";
   font-family: 'Glyphicons Halflings';
   display: inline-block;
   padding: 10px;
@@ -214,16 +190,9 @@ $(document).ready(function () {
 }
 
 .tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
-  content: "&#xe258;";
-  border: none;
-}
-
-.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
-  content: "";
+  content: "\e258";
   font-family: 'Glyphicons Halflings';
-  display: inline-block;
-  padding: 10px;
-  border-right: 1px solid #ddd;
+  border: none;
 }
 
 .tabset-dropdown > .nav-tabs > li.active {
@@ -236,6 +205,7 @@ $(document).ready(function () {
   border: none;
   display: inline-block;
   border-radius: 4px;
+  background-color: transparent;
 }
 
 .tabset-dropdown > .nav-tabs.nav-tabs-open > li {
@@ -266,7 +236,7 @@ $(document).ready(function () {
 <div class="navbar navbar-default  navbar-fixed-top" role="navigation">
   <div class="container">
     <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbar" data-bs-target="#navbar">
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
@@ -303,7 +273,7 @@ $(document).ready(function () {
   </div><!--/.container -->
 </div><!--/.navbar -->
 
-<div class="fluid-row" id="header">
+<div id="header">
 
 
 
@@ -311,211 +281,366 @@ $(document).ready(function () {
 
 </div>
 
+
 <p>Here you can find slides from past meetups.</p>
-<div id="january-29-2020" class="section level3">
+<div id="november-2-2023" class="section level3">
+<h3>November 2, 2023</h3>
+<ul>
+<li><a href="slides/20231102_Thuerlimann.pdf">Unveiling Market Insights
+with Real Estate</a> (Andreas Thürlimann, Datahouse)</li>
+<li><a href="slides/20231102_Farnham.pdf">Interpretable machine
+learning: applications in public health</a> (Andrea Farnham, University
+of Zurich)</li>
+</ul>
+</div>
+<div id="october-29-2020" class="section level3">
 <h3>October 29, 2020</h3>
 <ul>
-<li><a href="https://github.com/statistikZH/SPARQL_WITH_R">SPARQL with R</a> (Katharina Kaelin, Statistisches Amt, Kanton Zürich)</li>
-<li><a href="https://github.com/Zurich-R-User-Group/Zurich-R-User-Group.github.io/blob/master/slides/FitzpatrickBR_ZRUG_Spatial_CV_Talk.pdf">Spatial Cross Validation in the Presence of a Class Imbalance and Spatial Heterogeneity</a> (Ben Fitzpatrick - Swiss Federal Institute for Forest, Snow and Landscape Research WSL)</li>
-<li><a href="https://github.com/Zurich-R-User-Group/Zurich-R-User-Group.github.io/blob/master/slides/RUG_20201029.pdf">Spatially consistent postprocessing of probabilistic cloud cover forecasts</a> (Stephan Hemri - MeteoSwiss)</li>
+<li><a href="https://github.com/statistikZH/SPARQL_WITH_R">SPARQL with
+R</a> (Katharina Kaelin, Statistisches Amt, Kanton Zürich)</li>
 </ul>
 </div>
 <div id="january-29-2020" class="section level3">
 <h3>January 29, 2020</h3>
 <ul>
-<li><a href="slides/20200129_PartnerRe_pdfversion.pdf">From survival analysis to projecting disability payments</a> (Benjamin Abt and Simon Adamov, PartnerRe)</li>
+<li><a href="slides/20200129_PartnerRe_pdfversion.pdf">From survival
+analysis to projecting disability payments</a> (Benjamin Abt and Simon
+Adamov, PartnerRe)</li>
 <li>Data Science at UPC (Felix Reisen, UPC)</li>
-<li><a href="https://rinterface.com/shiny/talks/zurichR2020/index.html#slide=1">shinyMobile: mobile ready shiny apps</a> (David Granjon, Novartis)</li>
+<li><a
+href="https://rinterface.com/shiny/talks/zurichR2020/index.html#slide=1">shinyMobile:
+mobile ready shiny apps</a> (David Granjon, Novartis)</li>
 </ul>
 </div>
 <div id="november-13-2019" class="section level3">
 <h3>November 13, 2019</h3>
 <ul>
-<li><a href="slides/20191113_Perucco.pdf">Predicting the departing runway of a flight based on a classification tree model</a> (Benjamin Perucco, Zurich Airport)</li>
-<li><a href="slides/20191113_Banha.pdf">NOTAM message classifier</a> (Joao Banha, Swiss International Air Lines)</li>
+<li><a href="slides/20191113_Perucco.pdf">Predicting the departing
+runway of a flight based on a classification tree model</a> (Benjamin
+Perucco, Zurich Airport)</li>
+<li><a href="slides/20191113_Banha.pdf">NOTAM message classifier</a>
+(Joao Banha, Swiss International Air Lines)</li>
 </ul>
 </div>
 <div id="october-14-2019" class="section level3">
 <h3>October 14, 2019</h3>
 <ul>
-<li><a href="slides/20191014_quanteda.pdf">quanteda - Quantitative Analysis of Textual Data</a> (Stefan Müller, UZH)</li>
-<li><a href="https://zhr-meetup-201910.netlify.com/#1">useR!2019 Toulouse : ZRH-PARIS-BORDEAUX-TOULOUSE</a> (Matthias Bannert, KOF/ETHZ)</li>
+<li><a href="slides/20191014_quanteda.pdf">quanteda - Quantitative
+Analysis of Textual Data</a> (Stefan Müller, UZH)</li>
+<li><a href="https://zhr-meetup-201910.netlify.com/#1">useR!2019
+Toulouse : ZRH-PARIS-BORDEAUX-TOULOUSE</a> (Matthias Bannert,
+KOF/ETHZ)</li>
 </ul>
 </div>
 <div id="september-16-2019" class="section level3">
 <h3>September 16, 2019</h3>
 <ul>
-<li>Relational data models with the dm package: <a href="https://github.com/krlmlr/dm/blob/master/demo/zurich.R">R script</a>, <a href="https://krlmlr.github.io/dm/">package website</a> (Kirill Müller, cynkra)</li>
-<li><a href="slides/20190916_Pres_Datahouse_Crawling.pdf">Tracking Real Estate Project Web Sites with R</a> (Thomas Maier, Datahouse AG)</li>
+<li>Relational data models with the dm package: <a
+href="https://github.com/krlmlr/dm/blob/master/demo/zurich.R">R
+script</a>, <a href="https://krlmlr.github.io/dm/">package website</a>
+(Kirill Müller, cynkra)</li>
+<li><a href="slides/20190916_Pres_Datahouse_Crawling.pdf">Tracking Real
+Estate Project Web Sites with R</a> (Thomas Maier, Datahouse AG)</li>
 </ul>
 </div>
 <div id="june-18-2019" class="section level3">
 <h3>June 18, 2019</h3>
 <ul>
-<li><a href="slides/20190618_reinforcelearn.pdf">Use case of reinforcement-learning examplified by Super Mario AI</a> (Sebastian Heinz &amp; Oliver Guggenbühl, STATWORX)</li>
-<li><a href="slides/20190618_duckdb.pdf">Analytical Data Management with R</a> (Hannes Mühleisen, CWI, University of Amsterdam (UvA))</li>
+<li><a href="slides/20190618_reinforcelearn.pdf">Use case of
+reinforcement-learning examplified by Super Mario AI</a> (Sebastian
+Heinz &amp; Oliver Guggenbühl, STATWORX)</li>
+<li><a href="slides/20190618_duckdb.pdf">Analytical Data Management with
+R</a> (Hannes Mühleisen, CWI, University of Amsterdam (UvA))</li>
 </ul>
 </div>
 <div id="may-22-2019" class="section level3">
 <h3>May 22, 2019</h3>
 <ul>
-<li><a href="https://lyndametref.github.io/docker4r-presentation/docs/">Docker for R users</a> (Lynda Metref, Helbling Technik AG)</li>
-<li><a href="https://rinterface.com/shiny/talks/index.html">Toward production-ready user interfaces with the R Shiny framework</a> (David Granjon, UZH)</li>
+<li><a
+href="https://lyndametref.github.io/docker4r-presentation/docs/">Docker
+for R users</a> (Lynda Metref, Helbling Technik AG)</li>
+<li><a href="https://rinterface.com/shiny/talks/index.html">Toward
+production-ready user interfaces with the R Shiny framework</a> (David
+Granjon, UZH)</li>
 </ul>
 </div>
 <div id="april-03-2019" class="section level3">
 <h3>April 03, 2019</h3>
 <ul>
-<li>Medical underwriting triage: An end-to-end machine learning case study (Alexander Noll, PartnerRe)</li>
-<li><a href="slides/20190403_Reber_chartbookR.pdf">Introducing chartbookR</a> (Kilian Reber, SUVA)</li>
+<li>Medical underwriting triage: An end-to-end machine learning case
+study (Alexander Noll, PartnerRe)</li>
+<li><a href="slides/20190403_Reber_chartbookR.pdf">Introducing
+chartbookR</a> (Kilian Reber, SUVA)</li>
 </ul>
 </div>
 <div id="february-19-2019" class="section level3">
 <h3>February 19, 2019</h3>
 <ul>
-<li><a href="slides/20190219_talkMJK.pdf">On weapons and dialects: The initial hypothesis and the final story</a> (Marie-José Kolly, NZZ)</li>
-<li><a href="https://docs.google.com/presentation/d/1wWc-yjw33mIA8SrOQd16OoIID54L0wU5mNV4410RxKk">Data driven journalism at Tamedia</a> (Patrick Meier, Tamedia)</li>
+<li><a href="slides/20190219_talkMJK.pdf">On weapons and dialects: The
+initial hypothesis and the final story</a> (Marie-José Kolly, NZZ)</li>
+<li><a
+href="https://docs.google.com/presentation/d/1wWc-yjw33mIA8SrOQd16OoIID54L0wU5mNV4410RxKk">Data
+driven journalism at Tamedia</a> (Patrick Meier, Tamedia)</li>
 </ul>
 </div>
 <div id="december-5-2018" class="section level3">
 <h3>December 5, 2018</h3>
 <ul>
-<li><a href="https://stat.ethz.ch/~maechler/U/R/Zurich_R-2018_ProgR-ALTREP.html#1">What I find important when R Programming - and Recent Cool Features in R</a> (Dr. Martin Mächler, ETH Zurich)</li>
+<li><a
+href="https://stat.ethz.ch/~maechler/U/R/Zurich_R-2018_ProgR-ALTREP.html#1">What
+I find important when R Programming - and Recent Cool Features in R</a>
+(Dr. Martin Mächler, ETH Zurich)</li>
 </ul>
 </div>
 <div id="october-25-2018" class="section level3">
 <h3>October 25, 2018</h3>
 <ul>
-<li><a href="slides/20181025_useR_predicting_FIFA_groll.pdf">A Comparison of Covariate-based Prediction Methods for FIFA World Cups</a> (Andreas Groll, TU Dortmund)</li>
-<li><a href="slides/20181025_useR_predicting_biathlon_maier.pdf">Predicting biathlon shooting performance using machine learning</a> (Thomas Maier, Swiss Federal Institute of Sport Magglingen/datahouse)</li>
+<li><a href="slides/20181025_useR_predicting_FIFA_groll.pdf">A
+Comparison of Covariate-based Prediction Methods for FIFA World Cups</a>
+(Andreas Groll, TU Dortmund)</li>
+<li><a
+href="slides/20181025_useR_predicting_biathlon_maier.pdf">Predicting
+biathlon shooting performance using machine learning</a> (Thomas Maier,
+Swiss Federal Institute of Sport Magglingen/datahouse)</li>
 </ul>
 </div>
 <div id="september-3-2018" class="section level3">
 <h3>September 3, 2018</h3>
 <ul>
-<li><a href="slides/20180903_blogdown_rmeetup_tlorusso.pdf">blogdown: Creating Websites with R Markdown</a> (Thomas Lo Russo, Statistical Office, Canton of Zurich)</li>
-<li><a href="https://krlmlr.github.io/dbi-slides/2018-09-zurich-meetup/">DBI: Recent developments in R’s database interface</a> (Kirill Müller, cynkra GmbH)</li>
+<li><a href="slides/20180903_blogdown_rmeetup_tlorusso.pdf">blogdown:
+Creating Websites with R Markdown</a> (Thomas Lo Russo, Statistical
+Office, Canton of Zurich)</li>
+<li><a
+href="https://krlmlr.github.io/dbi-slides/2018-09-zurich-meetup/">DBI:
+Recent developments in R’s database interface</a> (Kirill Müller, cynkra
+GmbH)</li>
 </ul>
 </div>
 <div id="may-16-2018" class="section level3">
 <h3>May 16, 2018</h3>
 <ul>
-<li><a href="slides/20180516_Pres_Schweizer.pdf">Micro location rating in real estate</a> (Jacqueline Schweizer, Wüest Partner)</li>
-<li><a href="slides/20180516_Pres_Papritz.pdf">Speeding R up on your computer by parallelized computations - a geostatistical case study</a> (Andreas Papritz, Department of Environmental Systems Science, ETH Zurich / Statistik Stadt Zürich)</li>
+<li><a href="slides/20180516_Pres_Schweizer.pdf">Micro location rating
+in real estate</a> (Jacqueline Schweizer, Wüest Partner)</li>
+<li><a href="slides/20180516_Pres_Papritz.pdf">Speeding R up on your
+computer by parallelized computations - a geostatistical case study</a>
+(Andreas Papritz, Department of Environmental Systems Science, ETH
+Zurich / Statistik Stadt Zürich)</li>
 </ul>
 </div>
 <div id="march-21-2018" class="section level3">
 <h3>March 21, 2018</h3>
 <ul>
-<li><p><a href="slides/20180321_LTPM-in-R.pdf">Long Term Protection Model</a> (Alexis Iglauer, Partner Re, and Maarten-Jan Kallen, BeDataDriven, on behalf of Dr. Urszula Gasser, Partner Re)</p></li>
-<li><p>Social contact network analysis: static versus dynamic (time-stamped) approaches (Beatriz Vidondo, Veterinary Public Health Institute, Department of Clinical Research and Public Health, University of Bern)</p></li>
+<li><p><a href="slides/20180321_LTPM-in-R.pdf">Long Term Protection
+Model</a> (Alexis Iglauer, Partner Re, and Maarten-Jan Kallen,
+BeDataDriven, on behalf of Dr. Urszula Gasser, Partner Re)</p></li>
+<li><p>Social contact network analysis: static versus dynamic
+(time-stamped) approaches (Beatriz Vidondo, Veterinary Public Health
+Institute, Department of Clinical Research and Public Health, University
+of Bern)</p></li>
 </ul>
 </div>
 <div id="january-8-2018" class="section level3">
 <h3>January 8, 2018</h3>
 <ul>
-<li><a href="https://www.slideshare.net/NicolaLambiase/big-data-analytics-in-r-using-sparklyr">Big Data Analytics in R using sparklyr</a> (Nicola Lambiase, Mirai-Solutions)
+<li><a
+href="https://www.slideshare.net/NicolaLambiase/big-data-analytics-in-r-using-sparklyr">Big
+Data Analytics in R using sparklyr</a> (Nicola Lambiase,
+Mirai-Solutions)
 <ul>
-<li>also available as <a href="https://gist.github.com/lambiase/f07ba853618a9219137fee0764671c94#file-nyc_tlc-rmd">Rmd</a> and <a href="https://cdn.rawgit.com/lambiase/f07ba853618a9219137fee0764671c94/raw/4f65642e012704f087a93e337ee10b486d53e544/nyc_tlc.html">html</a> files</li>
+<li>also available as <a
+href="https://gist.github.com/lambiase/f07ba853618a9219137fee0764671c94#file-nyc_tlc-rmd">Rmd</a>
+and <a
+href="https://cdn.rawgit.com/lambiase/f07ba853618a9219137fee0764671c94/raw/4f65642e012704f087a93e337ee10b486d53e544/nyc_tlc.html">html</a>
+files</li>
 </ul></li>
-<li><a href="https://www.slideshare.net/Zurich_R_User_Group/anomaly-detection-database-integrated">Anomaly detection – database integrated</a> (Olaf Nimz, Trivadis)</li>
+<li><a
+href="https://www.slideshare.net/Zurich_R_User_Group/anomaly-detection-database-integrated">Anomaly
+detection – database integrated</a> (Olaf Nimz, Trivadis)</li>
 </ul>
 </div>
 <div id="november-7-2017" class="section level3">
 <h3>November 7, 2017</h3>
 <ul>
-<li><p><a href="https://github.com/statistikZH/RMeetup/blob/master/unstructered_data.pdf">Read and process unstructured data with R</a> (Max Grütter, Statistical Office, Canton of Zurich)</p></li>
-<li><p><a href="https://schnllr.github.io/Meetup">Mastering Corporate Design with R</a> (Andrea Schnell and Thomas Lo Russo, Statistical Office, Canton of Zurich)</p></li>
-<li><p><a href="http://prezi.com/ao48t6yeh_vz/?utm_campaign=share&amp;utm_medium=copy&amp;rc=ex0share">Illustration of pupils’ diversity with R</a> (Flavian Imlig, Zurich State Department of Education)</p></li>
-<li><p><a href="http://www.christophsax.com/slides/171107-meetup/slides.html">Making Public Data Public</a> (Christoph Sax, Christoph Sax Data Analytics)</p></li>
+<li><p><a
+href="https://github.com/statistikZH/RMeetup/blob/master/unstructered_data.pdf">Read
+and process unstructured data with R</a> (Max Grütter, Statistical
+Office, Canton of Zurich)</p></li>
+<li><p><a href="https://schnllr.github.io/Meetup">Mastering Corporate
+Design with R</a> (Andrea Schnell and Thomas Lo Russo, Statistical
+Office, Canton of Zurich)</p></li>
+<li><p><a
+href="http://prezi.com/ao48t6yeh_vz/?utm_campaign=share&amp;utm_medium=copy&amp;rc=ex0share">Illustration
+of pupils’ diversity with R</a> (Flavian Imlig, Zurich State Department
+of Education)</p></li>
+<li><p><a
+href="http://www.christophsax.com/slides/171107-meetup/slides.html">Making
+Public Data Public</a> (Christoph Sax, Christoph Sax Data
+Analytics)</p></li>
 </ul>
-<p>See also the <a href="https://statistikzh.github.io/RMeetup/">list of presentations</a> provided by the <a href="http://statistik.zh.ch/">Statistical Office of the Canton of Zurich</a>.</p>
+<p>See also the <a href="https://statistikzh.github.io/RMeetup/">list of
+presentations</a> provided by the <a
+href="http://statistik.zh.ch/">Statistical Office of the Canton of
+Zurich</a>.</p>
 </div>
 <div id="september-4-2017" class="section level3">
 <h3>September 4, 2017</h3>
 <ul>
-<li><p><a href="https://openml.github.io/articles/slides/talk_cenisbs_2017/OpenML_CENISBS.html">Open machine learning</a> (Heidi Seibold, Epidemiology, Biostatistics and Prevention Institute, UZH)</p></li>
-<li><p><a href="https://docs.datahouse.ch/2017/RMeetup_September">Dynamic Pricing - Analyzing rapidly-changing prices</a> (Daniel Meister, datahouse)</p></li>
-<li><p><a href="https://www.slideshare.net/Zurich_R_User_Group/r-at-sanitas-workflow-problems-and-solutions">R at Sanitas – Workflow, Problems and Solutions</a> (Patrik Lengacher, Sanitas)</p></li>
+<li><p><a
+href="https://openml.github.io/articles/slides/talk_cenisbs_2017/OpenML_CENISBS.html">Open
+machine learning</a> (Heidi Seibold, Epidemiology, Biostatistics and
+Prevention Institute, UZH)</p></li>
+<li><p><a
+href="https://docs.datahouse.ch/2017/RMeetup_September">Dynamic Pricing
+- Analyzing rapidly-changing prices</a> (Daniel Meister,
+datahouse)</p></li>
+<li><p><a
+href="https://www.slideshare.net/Zurich_R_User_Group/r-at-sanitas-workflow-problems-and-solutions">R
+at Sanitas – Workflow, Problems and Solutions</a> (Patrik Lengacher,
+Sanitas)</p></li>
 </ul>
 </div>
 <div id="may-3-2017" class="section level3">
 <h3>May 3, 2017</h3>
 <ul>
-<li><p><a href="https://www.slideshare.net/Zurich_R_User_Group/visualizing-the-frequency-of-transit-delays-using-qgis-and-the-leaflet-javascript-library-in-r">Visualizing the frequency of delays using QGIS and the Leaflet javascript library in R</a> (Peter B. Pearman and Thomas Roth)</p></li>
-<li><p><a href="https://www.slideshare.net/Zurich_R_User_Group/modeling-bus-bunching">Modelling Bus Bunching</a> (Andrea Farnham)</p></li>
+<li><p><a
+href="https://www.slideshare.net/Zurich_R_User_Group/visualizing-the-frequency-of-transit-delays-using-qgis-and-the-leaflet-javascript-library-in-r">Visualizing
+the frequency of delays using QGIS and the Leaflet javascript library in
+R</a> (Peter B. Pearman and Thomas Roth)</p></li>
+<li><p><a
+href="https://www.slideshare.net/Zurich_R_User_Group/modeling-bus-bunching">Modelling
+Bus Bunching</a> (Andrea Farnham)</p></li>
 <li><p>How we organized the Hackathon (Heidi Seibold)</p></li>
 </ul>
 </div>
 <div id="april-10-2017" class="section level3">
 <h3>April 10, 2017</h3>
 <ul>
-<li><a href="https://github.com/krlmlr/remake-slides">Slides</a> and <a href="https://github.com/krlmlr/remake-tutorial">tutorial</a> (Kirill Müller, ETHZ/datatools GmbH)</li>
+<li><a href="https://github.com/krlmlr/remake-slides">Slides</a> and <a
+href="https://github.com/krlmlr/remake-tutorial">tutorial</a> (Kirill
+Müller, ETHZ/datatools GmbH)</li>
 </ul>
 </div>
 <div id="february-6-2017" class="section level3">
 <h3>February 6, 2017</h3>
 <ul>
-<li><p><a href="https://www.slideshare.net/Zurich_R_User_Group/introduction-to-renjin-the-alternative-engine-for-r">Introduction to Renjin, the alternative engine for R</a> (Maarten-Jan Kallen, BeDataDriven)</p></li>
-<li><p><a href="https://github.com/christophM/r-y-u-do-dis/blob/master/presentation.Rmd">R, y u do dis?</a> (Christoph Molnar)</p></li>
-<li><p>Scraping Interactive Graphs with Selenium (Kushtrim Veseli, Swiss International Air Lines) (<a href="https://github.com/Zurich-R-User-Group/Zurich-R-User-Group.github.io/blob/master/_files/slides-code/538_polls_all.R">Code</a>)</p></li>
+<li><p><a
+href="https://www.slideshare.net/Zurich_R_User_Group/introduction-to-renjin-the-alternative-engine-for-r">Introduction
+to Renjin, the alternative engine for R</a> (Maarten-Jan Kallen,
+BeDataDriven)</p></li>
+<li><p><a
+href="https://github.com/christophM/r-y-u-do-dis/blob/master/presentation.Rmd">R,
+y u do dis?</a> (Christoph Molnar)</p></li>
+<li><p>Scraping Interactive Graphs with Selenium (Kushtrim Veseli, Swiss
+International Air Lines) (<a
+href="https://github.com/Zurich-R-User-Group/Zurich-R-User-Group.github.io/blob/master/_files/slides-code/538_polls_all.R">Code</a>)</p></li>
 </ul>
 </div>
-<div id="november-29-2016-how-r-is-used-in-different-professions" class="section level3">
+<div id="november-29-2016-how-r-is-used-in-different-professions"
+class="section level3">
 <h3>November 29, 2016 (How R is used in different professions)</h3>
 <ul>
 <li><p>Make it simpleR! (Raymond Zychowicz, UBS)</p></li>
-<li><p><a href="http://www.slideshare.net/Zurich_R_User_Group/rinfinancegabrielfoix">R in Finance: Using R in a productive and highly regulated environment</a> (Gabriel Foix, Mirai Solutions)</p></li>
-<li><p><a href="http://www.slideshare.net/Zurich_R_User_Group/how-to-use-r-in-different-professions-r-for-car-insurance-product-speaker-claudio-giancaterino">R for Car Insurance Product</a> (Claudio Giancaterino)</p></li>
-<li><p>Using Shiny for worldwide climate monitoring (David Masson, CelsiusPro)</p></li>
+<li><p><a
+href="http://www.slideshare.net/Zurich_R_User_Group/rinfinancegabrielfoix">R
+in Finance: Using R in a productive and highly regulated environment</a>
+(Gabriel Foix, Mirai Solutions)</p></li>
+<li><p><a
+href="http://www.slideshare.net/Zurich_R_User_Group/how-to-use-r-in-different-professions-r-for-car-insurance-product-speaker-claudio-giancaterino">R
+for Car Insurance Product</a> (Claudio Giancaterino)</p></li>
+<li><p>Using Shiny for worldwide climate monitoring (David Masson,
+CelsiusPro)</p></li>
 </ul>
 </div>
 <div id="september-29-2016" class="section level3">
 <h3>September 29, 2016</h3>
 <ul>
-<li><p><a href="http://htmlpreview.github.io/?https://github.com/Zurich-R-User-Group/Zurich-R-User-Group.github.io/blob/master/_files/slides/nadja-shiny/MeetupPresentation.html#/">Fast Prototyping in R - a brief Introduction to R Shiny</a> (Nadja Ulrich, Zühlke) <a href="https://github.com/naulrich/ZurichRUserMeetup">Code</a></p></li>
-<li><p><a href="http://www.slideshare.net/Zurich_R_User_Group/where-south-america-is-swinging-to-the-right-an-rdriven-data-journalism-project-from-neue-zrcher-zeitung">Clean, code, analyze and visualize election data in R: An example from datajournalism</a> (Marie-José Kolly &amp; Marvin Milatz, NZZ)</p></li>
+<li><p><a
+href="http://htmlpreview.github.io/?https://github.com/Zurich-R-User-Group/Zurich-R-User-Group.github.io/blob/master/_files/slides/nadja-shiny/MeetupPresentation.html#/">Fast
+Prototyping in R - a brief Introduction to R Shiny</a> (Nadja Ulrich,
+Zühlke) <a
+href="https://github.com/naulrich/ZurichRUserMeetup">Code</a></p></li>
+<li><p><a
+href="http://www.slideshare.net/Zurich_R_User_Group/where-south-america-is-swinging-to-the-right-an-rdriven-data-journalism-project-from-neue-zrcher-zeitung">Clean,
+code, analyze and visualize election data in R: An example from
+datajournalism</a> (Marie-José Kolly &amp; Marvin Milatz, NZZ)</p></li>
 </ul>
 </div>
 <div id="august-4-2016-visualisation-special" class="section level3">
 <h3>August 4, 2016 (Visualisation special)</h3>
 <ul>
-<li><p><a href="http://de.slideshare.net/Zurich_R_User_Group/analyzing-the-bhrer-family-data-set-using-an-advanced-mosaic-plot">Analyzing the Bührer family data set using an advanced mosaic plot.</a> (Thomas Roth, ZHAW)</p></li>
-<li><p><a href="http://de.slideshare.net/Zurich_R_User_Group/visualization-challenge-mapping-health-during-travel">Mapping health during travel: a visualization of a trip through Thailand.</a> (Andrea Farnham, UZH)</p></li>
-<li><p><a href="http://htmlpreview.github.io/?https://raw.githubusercontent.com/Zurich-R-User-Group/Zurich-R-User-Group.github.io/master/_files/slides/matteo-rcharts/index.html">Interactive Javascript in R with rCharts</a> (Matteo Casserini, Centralway)</p></li>
-<li><p><a href="https://github.com/srfdata/2015-09-elections-political-shifts/blob/master/analysis/main.Rmd">Animation of political shifts in elections</a> (Timo Grossenbacher, SRF)</p></li>
-<li><p><a href="http://de.slideshare.net/Zurich_R_User_Group/an-interactive-map-with-rshiny-and-leaflet">An interactive map with R-Shiny and leaflet</a> (Bojan Škerlak, Migros)</p></li>
-<li><p><a href="http://www.web.statistik.zh.ch/cms_vis/meetup/panachage.html">Federal election 2015 : visualizing the panachage-statistics</a> (Thomas Lo Russo, Statistical Office Zurich)</p></li>
-<li><p><a href="https://raw.githubusercontent.com/dimitris1ps/zurichRMeetup/master/meetup.rmd">Crosstalk</a> (Dimitris Psaradellis, eBay)</p></li>
+<li><p><a
+href="http://de.slideshare.net/Zurich_R_User_Group/analyzing-the-bhrer-family-data-set-using-an-advanced-mosaic-plot">Analyzing
+the Bührer family data set using an advanced mosaic plot.</a> (Thomas
+Roth, ZHAW)</p></li>
+<li><p><a
+href="http://de.slideshare.net/Zurich_R_User_Group/visualization-challenge-mapping-health-during-travel">Mapping
+health during travel: a visualization of a trip through Thailand.</a>
+(Andrea Farnham, UZH)</p></li>
+<li><p><a
+href="http://htmlpreview.github.io/?https://raw.githubusercontent.com/Zurich-R-User-Group/Zurich-R-User-Group.github.io/master/_files/slides/matteo-rcharts/index.html">Interactive
+Javascript in R with rCharts</a> (Matteo Casserini, Centralway)</p></li>
+<li><p><a
+href="https://github.com/srfdata/2015-09-elections-political-shifts/blob/master/analysis/main.Rmd">Animation
+of political shifts in elections</a> (Timo Grossenbacher, SRF)</p></li>
+<li><p><a
+href="http://de.slideshare.net/Zurich_R_User_Group/an-interactive-map-with-rshiny-and-leaflet">An
+interactive map with R-Shiny and leaflet</a> (Bojan Škerlak,
+Migros)</p></li>
+<li><p><a
+href="http://www.web.statistik.zh.ch/cms_vis/meetup/panachage.html">Federal
+election 2015 : visualizing the panachage-statistics</a> (Thomas Lo
+Russo, Statistical Office Zurich)</p></li>
+<li><p><a
+href="https://raw.githubusercontent.com/dimitris1ps/zurichRMeetup/master/meetup.rmd">Crosstalk</a>
+(Dimitris Psaradellis, eBay)</p></li>
 </ul>
 </div>
 <div id="may-23-2016" class="section level3">
 <h3>May 23, 2016</h3>
 <ul>
-<li><p><a href="http://chilp.it/e690a33">Microsoft R Server</a> (Marc Schöni, Microsoft)</p></li>
-<li><p><a href="http://www.slideshare.net/AndrewMarritt/zurich-r-user-group-presentation-may-2016">Automated reports at OrganizationView</a> (Andrew Marritt, OrganizationView)</p></li>
+<li><p><a href="http://chilp.it/e690a33">Microsoft R Server</a> (Marc
+Schöni, Microsoft)</p></li>
+<li><p><a
+href="http://www.slideshare.net/AndrewMarritt/zurich-r-user-group-presentation-may-2016">Automated
+reports at OrganizationView</a> (Andrew Marritt,
+OrganizationView)</p></li>
 </ul>
 </div>
 <div id="march-16-2016" class="section level3">
 <h3>March 16, 2016</h3>
 <ul>
-<li><p><a href="http://grssnbchr.github.io/zrug-rddj">Data journalism</a> (Timo Grossenbacher, SRF)</p></li>
-<li><p><a href="http://de.slideshare.net/Opendatazurich/open-data-lt3-r">Open Data Zurich</a> (Marco Sieber and Fidel Thomet, Open Data Zurich)</p></li>
+<li><p><a href="http://grssnbchr.github.io/zrug-rddj">Data
+journalism</a> (Timo Grossenbacher, SRF)</p></li>
+<li><p><a
+href="http://de.slideshare.net/Opendatazurich/open-data-lt3-r">Open Data
+Zurich</a> (Marco Sieber and Fidel Thomet, Open Data Zurich)</p></li>
 </ul>
 </div>
 <div id="january-21-2016" class="section level3">
 <h3>January 21, 2016</h3>
 <ul>
-<li><p><a href="http://de.slideshare.net/Zurich_R_User_Group/speeding-up-big-data-manipulation-with-datatable-package">Speeding up (big) data manipulation with the data.table package</a> (Vasily Tolkachev, Zurich University of Applied Sciences, Institute for Data Analysis and Process Design)</p></li>
-<li><p><a href="http://de.slideshare.net/Zurich_R_User_Group/zurich-r-user-group-desc-tools">DescTools - Tools for Descriptive Statistics and Exploratory Data Analysis</a> (Andri Signorell, Helsana/HWZ)</p></li>
+<li><p><a
+href="http://de.slideshare.net/Zurich_R_User_Group/speeding-up-big-data-manipulation-with-datatable-package">Speeding
+up (big) data manipulation with the data.table package</a> (Vasily
+Tolkachev, Zurich University of Applied Sciences, Institute for Data
+Analysis and Process Design)</p></li>
+<li><p><a
+href="http://de.slideshare.net/Zurich_R_User_Group/zurich-r-user-group-desc-tools">DescTools
+- Tools for Descriptive Statistics and Exploratory Data Analysis</a>
+(Andri Signorell, Helsana/HWZ)</p></li>
 </ul>
 </div>
 <div id="december-7-2015" class="section level3">
 <h3>December 7, 2015</h3>
 <ul>
-<li><p><a href="http://de.slideshare.net/Zurich_R_User_Group/december-2015-meetup-shiny-make-your-r-code-interactive-craig-wang">Shiny: Make Your R Code Interactive</a> (Craig Wang, ETH)</p></li>
+<li><p><a
+href="http://de.slideshare.net/Zurich_R_User_Group/december-2015-meetup-shiny-make-your-r-code-interactive-craig-wang">Shiny:
+Make Your R Code Interactive</a> (Craig Wang, ETH)</p></li>
 <li><p>Exploring knitr (Isaac Gravestock, UZH)</p></li>
-<li><p><a href="https://krlmlr-user15.github.io/presentation/#1">Improving computational performance with algorithm engineering</a> (Kirill Müller, ETH)</p></li>
+<li><p><a
+href="https://krlmlr-user15.github.io/presentation/#1">Improving
+computational performance with algorithm engineering</a> (Kirill Müller,
+ETH)</p></li>
 </ul>
 </div>
 
@@ -528,7 +653,7 @@ $(document).ready(function () {
 
 // add bootstrap table styles to pandoc tables
 function bootstrapStylePandocTables() {
-  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+  $('tr.odd').parent('tbody').parent('table').addClass('table table-condensed');
 }
 $(document).ready(function () {
   bootstrapStylePandocTables();
@@ -546,7 +671,7 @@ $(document).ready(function () {
 
 $(document).ready(function () {
   $('.tabset-dropdown > .nav-tabs > li').click(function () {
-    $(this).parent().toggleClass('nav-tabs-open')
+    $(this).parent().toggleClass('nav-tabs-open');
   });
 });
 </script>
