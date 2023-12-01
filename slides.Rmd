@@ -12,85 +12,89 @@ Here you can find slides from past meetups.
 - [Unveiling Market Insights with Real Estate](slides/20231102_Thuerlimann.pdf) (Andreas Thürlimann, Datahouse)
 - [Interpretable machine learning: applications in public health](slides/20231102_Farnham.pdf) (Andrea Farnham, University of Zurich)
 
+### September 11, 2023 -- R Integration and Real-World Problem solving
+- duckplyr: Tight Integration of duckdb with R and the tidyverse (Kirill Müller, cynkra)
+- The best bottle is just one (or two) GAMMs away (Luisa Barbanti and Matteo Tanadini, Zürich Data Scientists)
+
+05 JUL 2023 -- Re-Insurance and R - July Edition
+- Bayesian mortality modelling: a fresh perspective from A to Z (Patrick Hogan, Life & Health Analytics at PartnerRe)
+- An interactive Shiny dashboard to quantify the carbon footprint of marine insurers' Hull and Machinery portfolios (Elena Pesce, Business Analyst at the Swiss Re Institute and technical advisor to the Poseidon Principles for Marine Insurance)
+
+### July 05, 2022 -- Data Visualisation:
+- Detecting and analysing space-time correlations with ARCOS (Maciej Dobrzyński, Postdoc @ University of Berne)
+- Exploring "The Grammar of Graphics" (Lynda Metref, Principal Engineer / Data Scientist @ Helbling Technik)
+
+### April, 27 2022 -- All around Shiny
+- Comprehensive audit of a Shiny app through CI/CD: toward production-readiness (David Granjon (@divadnojnarg), @RinteRface founder and maintainer)
+- Anomaly Detection on Vote Sundays with R & Shiny (Thomas Lo Russo, Statistical Office of the Canton of Zurich)
+
+### October 27, 2021 -- Spatial Statistics
+- Developing the mlr/mlr3 machine learning framework in R (Patrick Schratz -- M.Sc. in Geoinformatics, member of the mlr-org core team)
+- varycoef: An R Package for Gaussian Process-based Spatially Varying Coefficient Models (Jakob Dambon, PhD, Data Scientist Intern @ Swiss Re, External Lecturer @ Lucerne University of Applied Sciences and Arts)
 
 ### October 29, 2020
 - [SPARQL with R](https://github.com/statistikZH/SPARQL_WITH_R) (Katharina Kaelin, Statistisches Amt, Kanton Zürich)
 
 ### January 29, 2020
-
 - [From survival analysis to projecting disability payments](slides/20200129_PartnerRe_pdfversion.pdf) (Benjamin Abt and Simon Adamov, PartnerRe)
 - Data Science at UPC (Felix Reisen, UPC)
 - [shinyMobile: mobile ready shiny apps](https://rinterface.com/shiny/talks/zurichR2020/index.html#slide=1) (David Granjon, Novartis)
 
 ### November 13, 2019
-
 - [Predicting the departing runway of a flight based on a classification tree model](slides/20191113_Perucco.pdf) (Benjamin Perucco, Zurich Airport)
 - [NOTAM message classifier](slides/20191113_Banha.pdf) (Joao Banha, Swiss International Air Lines)
 
 ### October 14, 2019
-
 - [quanteda - Quantitative Analysis of Textual Data](slides/20191014_quanteda.pdf) (Stefan Müller, UZH)
 - [useR!2019 Toulouse : ZRH-PARIS-BORDEAUX-TOULOUSE](https://zhr-meetup-201910.netlify.com/#1) (Matthias Bannert, KOF/ETHZ)
 
 ### September 16, 2019
-
 - Relational data models with the dm package: [R script](https://github.com/krlmlr/dm/blob/master/demo/zurich.R), [package website](https://krlmlr.github.io/dm/) (Kirill Müller, cynkra)
 - [Tracking Real Estate Project Web Sites with R](slides/20190916_Pres_Datahouse_Crawling.pdf) (Thomas Maier, Datahouse AG)
 
 ### June 18, 2019
-
 - [Use case of reinforcement-learning examplified by Super Mario AI](slides/20190618_reinforcelearn.pdf) (Sebastian Heinz \& Oliver Guggenbühl, STATWORX)
 - [Analytical Data Management with R](slides/20190618_duckdb.pdf) (Hannes Mühleisen, CWI, University of Amsterdam (UvA))
 
 ### May 22, 2019
-
 - [Docker for R users](https://lyndametref.github.io/docker4r-presentation/docs/) (Lynda Metref, Helbling Technik AG)
 - [Toward production-ready user interfaces with the R Shiny framework](https://rinterface.com/shiny/talks/index.html) (David Granjon, UZH)
 
 ### April 03, 2019
-
 - Medical underwriting triage: An end-to-end machine learning case study (Alexander Noll, PartnerRe)
 - [Introducing chartbookR](slides/20190403_Reber_chartbookR.pdf) (Kilian Reber, SUVA)
 
 ### February 19, 2019
-
 - [On weapons and dialects: The initial hypothesis and the final story](slides/20190219_talkMJK.pdf) (Marie-José Kolly, NZZ)
 - [Data driven journalism at Tamedia](https://docs.google.com/presentation/d/1wWc-yjw33mIA8SrOQd16OoIID54L0wU5mNV4410RxKk) (Patrick Meier, Tamedia)
 
 ### December 5, 2018
-
 - [What I find important when R Programming - and Recent Cool Features in R](https://stat.ethz.ch/~maechler/U/R/Zurich_R-2018_ProgR-ALTREP.html#1) (Dr. Martin Mächler, ETH Zurich)
 
 ### October 25, 2018
-
 - [A Comparison of Covariate-based Prediction Methods for FIFA World Cups](slides/20181025_useR_predicting_FIFA_groll.pdf) (Andreas Groll, TU Dortmund)
 - [Predicting biathlon shooting performance using machine learning](slides/20181025_useR_predicting_biathlon_maier.pdf) (Thomas Maier, Swiss Federal Institute of Sport Magglingen/datahouse)
 
 ### September 3, 2018
-
 - [blogdown: Creating Websites with R Markdown](slides/20180903_blogdown_rmeetup_tlorusso.pdf) (Thomas Lo Russo, Statistical Office, Canton of Zurich)
 - [DBI: Recent developments in R's database interface](https://krlmlr.github.io/dbi-slides/2018-09-zurich-meetup/) (Kirill Müller, cynkra GmbH)
 
 ### May 16, 2018
-
 - [Micro location rating in real estate](slides/20180516_Pres_Schweizer.pdf) (Jacqueline Schweizer, Wüest Partner)
 - [Speeding R up on your computer by parallelized computations - a geostatistical case study](slides/20180516_Pres_Papritz.pdf) (Andreas Papritz, Department of Environmental Systems Science, ETH Zurich / Statistik Stadt Zürich)
 
 ### March 21, 2018
-
 - [Long Term Protection Model](slides/20180321_LTPM-in-R.pdf) (Alexis Iglauer, Partner Re, and Maarten-Jan Kallen, BeDataDriven, on behalf of Dr. Urszula Gasser, Partner Re)
 
 - Social contact network analysis: static versus dynamic (time-stamped) approaches (Beatriz Vidondo, Veterinary Public Health Institute, Department of Clinical Research and Public Health, University of Bern)
 
 ### January 8, 2018
-
 - [Big Data Analytics in R using sparklyr](https://www.slideshare.net/NicolaLambiase/big-data-analytics-in-r-using-sparklyr) (Nicola Lambiase, Mirai-Solutions)
     - also available as [Rmd](https://gist.github.com/lambiase/f07ba853618a9219137fee0764671c94#file-nyc_tlc-rmd) and [html](https://cdn.rawgit.com/lambiase/f07ba853618a9219137fee0764671c94/raw/4f65642e012704f087a93e337ee10b486d53e544/nyc_tlc.html) files
 
 - [Anomaly detection – database integrated](https://www.slideshare.net/Zurich_R_User_Group/anomaly-detection-database-integrated) (Olaf Nimz, Trivadis)
 
 ### November 7, 2017
-
 - [Read and process unstructured data with R](https://github.com/statistikZH/RMeetup/blob/master/unstructered_data.pdf) (Max Grütter, Statistical Office, Canton of Zurich)
 
 - [Mastering Corporate Design with R](https://schnllr.github.io/Meetup) (Andrea Schnell and Thomas Lo Russo, Statistical Office, Canton of Zurich)
