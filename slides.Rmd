@@ -16,7 +16,7 @@ Here you can find slides from past meetups.
 - duckplyr: Tight Integration of duckdb with R and the tidyverse (Kirill Müller, cynkra)
 - The best bottle is just one (or two) GAMMs away (Luisa Barbanti and Matteo Tanadini, Zürich Data Scientists)
 
-05 JUL 2023 -- Re-Insurance and R - July Edition
+### 05 JUL 2023 -- Re-Insurance and R - July Edition
 - Bayesian mortality modelling: a fresh perspective from A to Z (Patrick Hogan, Life & Health Analytics at PartnerRe)
 - An interactive Shiny dashboard to quantify the carbon footprint of marine insurers' Hull and Machinery portfolios (Elena Pesce, Business Analyst at the Swiss Re Institute and technical advisor to the Poseidon Principles for Marine Insurance)
 
